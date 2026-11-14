@@ -1,184 +1,184 @@
 {
   "active": false,
   "connections": {
-    "Cada 6 horas": {
+    "Build GetOnBrd URLs": {
       "main": [
         [
           {
             "index": 0,
-            "node": "Descargar RemoteOK",
+            "node": "Download GetOnBrd",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Download GetOnBrd": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Normalize GetOnBrd",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Download RemoteOK": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Normalize RemoteOK",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Download Remotive": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Normalize Remotive",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Download We Work Remotely": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Normalize We Work Remotely",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Download n8n Forum": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Normalize n8n Forum",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Every 6 hours": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Download RemoteOK",
             "type": "main"
           },
           {
             "index": 0,
-            "node": "Descargar Remotive",
+            "node": "Download Remotive",
             "type": "main"
           },
           {
             "index": 0,
-            "node": "Descargar We Work Remotely",
+            "node": "Download We Work Remotely",
             "type": "main"
           },
           {
             "index": 0,
-            "node": "Descargar Foro n8n Jobs",
+            "node": "Download n8n Forum",
             "type": "main"
           },
           {
             "index": 0,
-            "node": "URLs GetOnBrd",
+            "node": "Build GetOnBrd URLs",
             "type": "main"
           }
         ]
       ]
     },
-    "Descargar Foro n8n Jobs": {
+    "Normalize GetOnBrd": {
       "main": [
         [
           {
             "index": 0,
-            "node": "Normalizar Foro n8n Jobs",
+            "node": "Save GetOnBrd",
             "type": "main"
           }
         ]
       ]
     },
-    "Descargar GetOnBrd": {
+    "Normalize RemoteOK": {
       "main": [
         [
           {
             "index": 0,
-            "node": "Normalizar GetOnBrd",
+            "node": "Save RemoteOK",
             "type": "main"
           }
         ]
       ]
     },
-    "Descargar RemoteOK": {
+    "Normalize Remotive": {
       "main": [
         [
           {
             "index": 0,
-            "node": "Normalizar RemoteOK",
+            "node": "Save Remotive",
             "type": "main"
           }
         ]
       ]
     },
-    "Descargar Remotive": {
+    "Normalize We Work Remotely": {
       "main": [
         [
           {
             "index": 0,
-            "node": "Normalizar Remotive",
+            "node": "Save We Work Remotely",
             "type": "main"
           }
         ]
       ]
     },
-    "Descargar We Work Remotely": {
+    "Normalize n8n Forum": {
       "main": [
         [
           {
             "index": 0,
-            "node": "Normalizar We Work Remotely",
+            "node": "Save n8n Forum",
             "type": "main"
           }
         ]
       ]
     },
-    "Ejecutar a mano": {
+    "Run manually": {
       "main": [
         [
           {
             "index": 0,
-            "node": "Descargar RemoteOK",
+            "node": "Download RemoteOK",
             "type": "main"
           },
           {
             "index": 0,
-            "node": "Descargar Remotive",
+            "node": "Download Remotive",
             "type": "main"
           },
           {
             "index": 0,
-            "node": "Descargar We Work Remotely",
+            "node": "Download We Work Remotely",
             "type": "main"
           },
           {
             "index": 0,
-            "node": "Descargar Foro n8n Jobs",
+            "node": "Download n8n Forum",
             "type": "main"
           },
           {
             "index": 0,
-            "node": "URLs GetOnBrd",
-            "type": "main"
-          }
-        ]
-      ]
-    },
-    "Normalizar Foro n8n Jobs": {
-      "main": [
-        [
-          {
-            "index": 0,
-            "node": "Guardar Foro n8n Jobs",
-            "type": "main"
-          }
-        ]
-      ]
-    },
-    "Normalizar GetOnBrd": {
-      "main": [
-        [
-          {
-            "index": 0,
-            "node": "Guardar GetOnBrd",
-            "type": "main"
-          }
-        ]
-      ]
-    },
-    "Normalizar RemoteOK": {
-      "main": [
-        [
-          {
-            "index": 0,
-            "node": "Guardar RemoteOK",
-            "type": "main"
-          }
-        ]
-      ]
-    },
-    "Normalizar Remotive": {
-      "main": [
-        [
-          {
-            "index": 0,
-            "node": "Guardar Remotive",
-            "type": "main"
-          }
-        ]
-      ]
-    },
-    "Normalizar We Work Remotely": {
-      "main": [
-        [
-          {
-            "index": 0,
-            "node": "Guardar We Work Remotely",
-            "type": "main"
-          }
-        ]
-      ]
-    },
-    "URLs GetOnBrd": {
-      "main": [
-        [
-          {
-            "index": 0,
-            "node": "Descargar GetOnBrd",
+            "node": "Build GetOnBrd URLs",
             "type": "main"
           }
         ]
@@ -186,11 +186,93 @@
     }
   },
   "id": "jhWf1Recoleccion",
-  "name": "WF1 - Recolección de ofertas",
+  "name": "WF1 · Collect job offers",
   "nodes": [
     {
+      "id": "note-header",
+      "name": "Note header",
+      "parameters": {
+        "color": 5,
+        "content": "## WF1 · Collect remote job offers\nEvery 6 h downloads offers from **5 sources** (3 APIs, 2 RSS), normalizes them to one schema and **upserts** them\ninto PostgreSQL (`offers`). Each source is an independent branch: one failing never stops the others.\n\n⚙️ Generated by `scripts/build_wf1.js` from tested code in `scripts/normalizers/` — **do not edit here**.",
+        "height": 200,
+        "width": 1300
+      },
+      "position": [
+        -60,
+        0
+      ],
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1
+    },
+    {
+      "id": "note-triggers",
+      "name": "Note triggers",
+      "parameters": {
+        "color": 7,
+        "content": "### Trigger\nCron every 6 h\n(Remotive allows ≤ 4 calls/day)",
+        "height": 1240,
+        "width": 200
+      },
+      "position": [
+        -60,
+        240
+      ],
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1
+    },
+    {
+      "id": "note-download",
+      "name": "Note download",
+      "parameters": {
+        "color": 6,
+        "content": "### 1 · Download\nHTTP GET, raw text response.\nRetries ×2 · continue on error",
+        "height": 1240,
+        "width": 440
+      },
+      "position": [
+        200,
+        240
+      ],
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1
+    },
+    {
+      "id": "note-normalize",
+      "name": "Note normalize",
+      "parameters": {
+        "color": 4,
+        "content": "### 2 · Normalize\nSource format → common schema.\nBad records are skipped.",
+        "height": 1240,
+        "width": 240
+      },
+      "position": [
+        700,
+        240
+      ],
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1
+    },
+    {
+      "id": "note-save",
+      "name": "Note save",
+      "parameters": {
+        "color": 2,
+        "content": "### 3 · Save\nIdempotent upsert by\n`(source, source_id)`",
+        "height": 1240,
+        "width": 240
+      },
+      "position": [
+        960,
+        240
+      ],
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1
+    },
+    {
       "id": "trigger-cron",
-      "name": "Cada 6 horas",
+      "name": "Every 6 hours",
+      "notes": "Runs all sources in parallel",
+      "notesInFlow": true,
       "parameters": {
         "rule": {
           "interval": [
@@ -203,18 +285,20 @@
       },
       "position": [
         0,
-        200
+        700
       ],
       "type": "n8n-nodes-base.scheduleTrigger",
       "typeVersion": 1.2
     },
     {
       "id": "trigger-manual",
-      "name": "Ejecutar a mano",
+      "name": "Run manually",
+      "notes": "For tests",
+      "notesInFlow": true,
       "parameters": {},
       "position": [
         0,
-        400
+        900
       ],
       "type": "n8n-nodes-base.manualTrigger",
       "typeVersion": 1
@@ -222,7 +306,9 @@
     {
       "id": "http-remoteok",
       "maxTries": 2,
-      "name": "Descargar RemoteOK",
+      "name": "Download RemoteOK",
+      "notes": "JSON API",
+      "notesInFlow": true,
       "onError": "continueRegularOutput",
       "parameters": {
         "headerParameters": {
@@ -246,8 +332,8 @@
         "url": "https://remoteok.com/api"
       },
       "position": [
-        260,
-        100
+        500,
+        320
       ],
       "retryOnFail": true,
       "type": "n8n-nodes-base.httpRequest",
@@ -255,14 +341,16 @@
     },
     {
       "id": "code-remoteok",
-      "name": "Normalizar RemoteOK",
+      "name": "Normalize RemoteOK",
+      "notes": "normalizeRemoteok() + dedupe",
+      "notesInFlow": true,
       "parameters": {
-        "jsCode": "// GENERADO por scripts/build_wf1.js desde scripts/normalizers/remoteok.js — no editar aquí.\n/**\n * Normalizador para RemoteOK.\n * Funciona de forma autocontenida sin require/import.\n */\n\nfunction stripHtml(html) {\n  if (!html || typeof html !== 'string') return null;\n  const text = html\n    .replace(/<style[^>]*>[\\s\\S]*?<\\/style>/gi, '')\n    .replace(/<script[^>]*>[\\s\\S]*?<\\/script>/gi, '')\n    .replace(/<[^>]+>/g, ' ');\n  const decoded = decodeEntities(text);\n  const collapsed = clean(decoded);\n  if (!collapsed) return null;\n  return collapsed.slice(0, 20000);\n}\n\nfunction decodeEntities(str) {\n  if (!str || typeof str !== 'string') return '';\n  const cp = (n, m) => (n > 0 && n <= 0x10ffff ? String.fromCodePoint(n) : m);\n  // &amp; va al final para no decodificar dos veces (\"&amp;lt;\" → \"&lt;\")\n  return str\n    .replace(/&lt;/g, '<')\n    .replace(/&gt;/g, '>')\n    .replace(/&quot;/g, '\"')\n    .replace(/&#39;/g, \"'\")\n    .replace(/&apos;/g, \"'\")\n    .replace(/&nbsp;/g, ' ')\n    .replace(/&#(\\d+);/g, (m, d) => cp(parseInt(d, 10), m))\n    .replace(/&#x([0-9a-fA-F]+);/g, (m, h) => cp(parseInt(h, 16), m))\n    .replace(/&amp;/g, '&');\n}\n\nfunction clean(str) {\n  if (str === null || str === undefined) return null;\n  const s = String(str).replace(/\\s+/g, ' ').trim();\n  return s.length > 0 ? s : null;\n}\n\nfunction toIso(dateStr) {\n  if (!dateStr) return null;\n  try {\n    let s = String(dateStr).trim();\n    if (!s) return null;\n    if (/^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?$/.test(s)) {\n      s += 'Z';\n    }\n    const d = new Date(s);\n    if (isNaN(d.getTime())) return null;\n    return d.toISOString();\n  } catch (e) {\n    return null;\n  }\n}\n\n// raw sin el HTML de la descripción (ya está como texto en `description`) ni logos: ~85% menos espacio.\nconst RAW_DROP = ['description', 'company_logo', 'company_logo_url', 'logo', 'image'];\nfunction slimRaw(item) {\n  return Object.fromEntries(Object.entries(item).filter(([k]) => !RAW_DROP.includes(k)));\n}\n\nfunction normalizeRemoteok(body) {\n  if (!body) return [];\n\n  let data;\n  try {\n    data = typeof body === 'string' ? JSON.parse(body) : body;\n  } catch (e) {\n    return [];\n  }\n\n  if (!Array.isArray(data)) return [];\n\n  const results = [];\n\n  for (const item of data) {\n    if (!item || typeof item !== 'object') continue;\n    // El elemento 0 u otros pueden ser avisos legales sin id: ignorarlos\n    if (!item.id) continue;\n\n    try {\n      const sourceId = String(item.id).trim();\n      const url = clean(item.url);\n      const title = clean(item.position);\n\n      if (!sourceId || !url || !title) continue;\n\n      const company = clean(item.company);\n      const location = clean(item.location);\n\n      let tags = [];\n      if (Array.isArray(item.tags)) {\n        const tagSet = new Set();\n        for (const t of item.tags) {\n          const cleanedTag = clean(t);\n          if (cleanedTag) {\n            tagSet.add(cleanedTag.toLowerCase());\n          }\n        }\n        tags = Array.from(tagSet);\n      }\n\n      const salaryMin = typeof item.salary_min === 'number' && item.salary_min > 0 ? Math.round(item.salary_min) : null;\n      const salaryMax = typeof item.salary_max === 'number' && item.salary_max > 0 ? Math.round(item.salary_max) : null;\n      const hasSalary = salaryMin !== null || salaryMax !== null;\n      const salaryCurrency = hasSalary ? 'USD' : null;\n\n      const publishedAt = toIso(item.date);\n      const description = stripHtml(item.description);\n\n      results.push({\n        source: 'remoteok',\n        source_id: sourceId,\n        url: url,\n        title: title,\n        company: company,\n        location: location,\n        tags: tags,\n        category: null,\n        job_type: null,\n        salary_min: salaryMin,\n        salary_max: salaryMax,\n        salary_currency: salaryCurrency,\n        published_at: publishedAt,\n        description: description,\n        raw: slimRaw(item),\n      });\n    } catch (e) {\n      // Ignorar registro con error\n      continue;\n    }\n  }\n\n  return results;\n}\n\n\n// Une todas las respuestas (una por URL) y deduplica por source_id (el upsert no admite repetidos).\nconst seen = new Set();\nconst offers = $input.all().flatMap((it) => {\n  const body = it.json?.data ?? '';\n  return normalizeRemoteok(typeof body === 'string' ? body : JSON.stringify(body));\n}).filter((o) => !seen.has(o.source_id) && seen.add(o.source_id));\nreturn [{ json: { source: 'remoteok', count: offers.length, payload: JSON.stringify(offers) } }];\n",
+        "jsCode": "// GENERATED by scripts/build_wf1.js from scripts/normalizers/remoteok.js (unit-tested) — do not edit here.\n/**\n * Normalizador para RemoteOK.\n * Funciona de forma autocontenida sin require/import.\n */\n\nfunction stripHtml(html) {\n  if (!html || typeof html !== 'string') return null;\n  const text = html\n    .replace(/<style[^>]*>[\\s\\S]*?<\\/style>/gi, '')\n    .replace(/<script[^>]*>[\\s\\S]*?<\\/script>/gi, '')\n    .replace(/<[^>]+>/g, ' ');\n  const decoded = decodeEntities(text);\n  const collapsed = clean(decoded);\n  if (!collapsed) return null;\n  return collapsed.slice(0, 20000);\n}\n\nfunction decodeEntities(str) {\n  if (!str || typeof str !== 'string') return '';\n  const cp = (n, m) => (n > 0 && n <= 0x10ffff ? String.fromCodePoint(n) : m);\n  // &amp; va al final para no decodificar dos veces (\"&amp;lt;\" → \"&lt;\")\n  return str\n    .replace(/&lt;/g, '<')\n    .replace(/&gt;/g, '>')\n    .replace(/&quot;/g, '\"')\n    .replace(/&#39;/g, \"'\")\n    .replace(/&apos;/g, \"'\")\n    .replace(/&nbsp;/g, ' ')\n    .replace(/&#(\\d+);/g, (m, d) => cp(parseInt(d, 10), m))\n    .replace(/&#x([0-9a-fA-F]+);/g, (m, h) => cp(parseInt(h, 16), m))\n    .replace(/&amp;/g, '&');\n}\n\nfunction clean(str) {\n  if (str === null || str === undefined) return null;\n  const s = String(str).replace(/\\s+/g, ' ').trim();\n  return s.length > 0 ? s : null;\n}\n\nfunction toIso(dateStr) {\n  if (!dateStr) return null;\n  try {\n    let s = String(dateStr).trim();\n    if (!s) return null;\n    if (/^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?$/.test(s)) {\n      s += 'Z';\n    }\n    const d = new Date(s);\n    if (isNaN(d.getTime())) return null;\n    return d.toISOString();\n  } catch (e) {\n    return null;\n  }\n}\n\n// raw sin el HTML de la descripción (ya está como texto en `description`) ni logos: ~85% menos espacio.\nconst RAW_DROP = ['description', 'company_logo', 'company_logo_url', 'logo', 'image'];\nfunction slimRaw(item) {\n  return Object.fromEntries(Object.entries(item).filter(([k]) => !RAW_DROP.includes(k)));\n}\n\nfunction normalizeRemoteok(body) {\n  if (!body) return [];\n\n  let data;\n  try {\n    data = typeof body === 'string' ? JSON.parse(body) : body;\n  } catch (e) {\n    return [];\n  }\n\n  if (!Array.isArray(data)) return [];\n\n  const results = [];\n\n  for (const item of data) {\n    if (!item || typeof item !== 'object') continue;\n    // El elemento 0 u otros pueden ser avisos legales sin id: ignorarlos\n    if (!item.id) continue;\n\n    try {\n      const sourceId = String(item.id).trim();\n      const url = clean(item.url);\n      const title = clean(item.position);\n\n      if (!sourceId || !url || !title) continue;\n\n      const company = clean(item.company);\n      const location = clean(item.location);\n\n      let tags = [];\n      if (Array.isArray(item.tags)) {\n        const tagSet = new Set();\n        for (const t of item.tags) {\n          const cleanedTag = clean(t);\n          if (cleanedTag) {\n            tagSet.add(cleanedTag.toLowerCase());\n          }\n        }\n        tags = Array.from(tagSet);\n      }\n\n      const salaryMin = typeof item.salary_min === 'number' && item.salary_min > 0 ? Math.round(item.salary_min) : null;\n      const salaryMax = typeof item.salary_max === 'number' && item.salary_max > 0 ? Math.round(item.salary_max) : null;\n      const hasSalary = salaryMin !== null || salaryMax !== null;\n      const salaryCurrency = hasSalary ? 'USD' : null;\n\n      const publishedAt = toIso(item.date);\n      const description = stripHtml(item.description);\n\n      results.push({\n        source: 'remoteok',\n        source_id: sourceId,\n        url: url,\n        title: title,\n        company: company,\n        location: location,\n        tags: tags,\n        category: null,\n        job_type: null,\n        salary_min: salaryMin,\n        salary_max: salaryMax,\n        salary_currency: salaryCurrency,\n        published_at: publishedAt,\n        description: description,\n        raw: slimRaw(item),\n      });\n    } catch (e) {\n      // Ignorar registro con error\n      continue;\n    }\n  }\n\n  return results;\n}\n\n\n// Merge all responses (one per URL) and dedupe by source_id (the upsert rejects repeated keys).\nconst seen = new Set();\nconst offers = $input.all().flatMap((it) => {\n  const body = it.json?.data ?? '';\n  return normalizeRemoteok(typeof body === 'string' ? body : JSON.stringify(body));\n}).filter((o) => !seen.has(o.source_id) && seen.add(o.source_id));\nreturn [{ json: { source: 'remoteok', count: offers.length, payload: JSON.stringify(offers) } }];\n",
         "mode": "runOnceForAllItems"
       },
       "position": [
-        520,
-        100
+        760,
+        320
       ],
       "type": "n8n-nodes-base.code",
       "typeVersion": 2
@@ -275,7 +363,9 @@
         }
       },
       "id": "pg-remoteok",
-      "name": "Guardar RemoteOK",
+      "name": "Save RemoteOK",
+      "notes": "Upsert → new / total",
+      "notesInFlow": true,
       "parameters": {
         "operation": "executeQuery",
         "options": {
@@ -284,8 +374,8 @@
         "query": "-- $1 = JSON array de ofertas normalizadas (ver scripts/normalizers/SPEC.md)\nWITH up AS (\n  INSERT INTO offers (source, source_id, url, title, company, location, tags, category, job_type,\n                      salary_min, salary_max, salary_currency, published_at, description, raw)\n  SELECT x.source, x.source_id, x.url, x.title, x.company, x.location,\n         COALESCE(ARRAY(SELECT jsonb_array_elements_text(x.tags)), '{}'),\n         x.category, x.job_type, x.salary_min, x.salary_max, x.salary_currency,\n         x.published_at, x.description, x.raw\n  FROM jsonb_to_recordset($1::jsonb) AS x(\n         source text, source_id text, url text, title text, company text, location text,\n         tags jsonb, category text, job_type text, salary_min int, salary_max int,\n         salary_currency text, published_at timestamptz, description text, raw jsonb)\n  WHERE x.source_id IS NOT NULL AND x.url IS NOT NULL AND x.title IS NOT NULL\n  -- Refresca el contenido (la oferta pudo editarse); NO toca status/score/notified_at.\n  ON CONFLICT (source, source_id) DO UPDATE SET\n    last_seen_at = now(), url = EXCLUDED.url, title = EXCLUDED.title, company = EXCLUDED.company,\n    location = EXCLUDED.location, tags = EXCLUDED.tags, category = EXCLUDED.category, job_type = EXCLUDED.job_type,\n    salary_min = EXCLUDED.salary_min, salary_max = EXCLUDED.salary_max, salary_currency = EXCLUDED.salary_currency,\n    description = EXCLUDED.description, raw = EXCLUDED.raw\n  RETURNING source, (xmax = 0) AS inserted\n)\nSELECT source, count(*) FILTER (WHERE inserted) AS nuevas, count(*) AS total\nFROM up GROUP BY source;\n"
       },
       "position": [
-        780,
-        100
+        1020,
+        320
       ],
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6
@@ -293,7 +383,9 @@
     {
       "id": "http-remotive",
       "maxTries": 2,
-      "name": "Descargar Remotive",
+      "name": "Download Remotive",
+      "notes": "JSON API",
+      "notesInFlow": true,
       "onError": "continueRegularOutput",
       "parameters": {
         "headerParameters": {
@@ -317,8 +409,8 @@
         "url": "https://remotive.com/api/remote-jobs?category=software-dev"
       },
       "position": [
-        260,
-        320
+        500,
+        560
       ],
       "retryOnFail": true,
       "type": "n8n-nodes-base.httpRequest",
@@ -326,14 +418,16 @@
     },
     {
       "id": "code-remotive",
-      "name": "Normalizar Remotive",
+      "name": "Normalize Remotive",
+      "notes": "normalizeRemotive() + dedupe",
+      "notesInFlow": true,
       "parameters": {
-        "jsCode": "// GENERADO por scripts/build_wf1.js desde scripts/normalizers/remotive.js — no editar aquí.\n/**\n * Normalizador para Remotive.\n * Funciona de forma autocontenida sin require/import.\n */\n\nfunction stripHtml(html) {\n  if (!html || typeof html !== 'string') return null;\n  const text = html\n    .replace(/<style[^>]*>[\\s\\S]*?<\\/style>/gi, '')\n    .replace(/<script[^>]*>[\\s\\S]*?<\\/script>/gi, '')\n    .replace(/<[^>]+>/g, ' ');\n  const decoded = decodeEntities(text);\n  const collapsed = clean(decoded);\n  if (!collapsed) return null;\n  return collapsed.slice(0, 20000);\n}\n\nfunction decodeEntities(str) {\n  if (!str || typeof str !== 'string') return '';\n  const cp = (n, m) => (n > 0 && n <= 0x10ffff ? String.fromCodePoint(n) : m);\n  // &amp; va al final para no decodificar dos veces (\"&amp;lt;\" → \"&lt;\")\n  return str\n    .replace(/&lt;/g, '<')\n    .replace(/&gt;/g, '>')\n    .replace(/&quot;/g, '\"')\n    .replace(/&#39;/g, \"'\")\n    .replace(/&apos;/g, \"'\")\n    .replace(/&nbsp;/g, ' ')\n    .replace(/&#(\\d+);/g, (m, d) => cp(parseInt(d, 10), m))\n    .replace(/&#x([0-9a-fA-F]+);/g, (m, h) => cp(parseInt(h, 16), m))\n    .replace(/&amp;/g, '&');\n}\n\nfunction clean(str) {\n  if (str === null || str === undefined) return null;\n  const s = String(str).replace(/\\s+/g, ' ').trim();\n  return s.length > 0 ? s : null;\n}\n\nfunction toIso(dateStr) {\n  if (!dateStr) return null;\n  try {\n    let s = String(dateStr).trim();\n    if (!s) return null;\n    // Remotive viene sin zona → asumir UTC\n    if (/^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?$/.test(s)) {\n      s += 'Z';\n    }\n    const d = new Date(s);\n    if (isNaN(d.getTime())) return null;\n    return d.toISOString();\n  } catch (e) {\n    return null;\n  }\n}\n\nfunction parseSalary(salaryStr) {\n  if (!salaryStr || typeof salaryStr !== 'string') {\n    return { min: null, max: null, currency: null };\n  }\n\n  const s = salaryStr.trim();\n  if (!s || /competitive/i.test(s)) {\n    return { min: null, max: null, currency: null };\n  }\n  // Solo salarios anuales: por hora/día/semana/mes → null (el texto original queda en raw)\n  if (/(\\/\\s*(h|hr|hour|d|day|wk|week|mo|month)\\b)|\\b(per|an?)\\s+(hour|day|week|month)\\b|\\b(hourly|daily|weekly|monthly)\\b/i.test(s)) {\n    return { min: null, max: null, currency: null };\n  }\n\n  const currency = s.includes('$') ? 'USD' : null;\n\n  // Extraer números e indicador 'k'\n  // Admite \"$35,3k- $52k\", \"$60,000 - $80,000\", \"$14 - $20/hour\"\n  const matches = [...s.matchAll(/(?:[\\$€£])?\\s*(\\d+(?:[.,]\\d+)?)\\s*([kK])?/g)];\n  if (!matches || matches.length === 0) {\n    return { min: null, max: null, currency };\n  }\n\n  const numbers = [];\n  for (const match of matches) {\n    let rawNum = match[1];\n    const isK = !!match[2];\n\n    let val = 0;\n    if (isK) {\n      rawNum = rawNum.replace(',', '.');\n      val = Math.round(parseFloat(rawNum) * 1000);\n    } else {\n      if (/^\\d{1,3}(,\\d{3})+(\\.\\d+)?$/.test(rawNum)) {\n        rawNum = rawNum.replace(/,/g, '');\n      } else if (/^\\d{1,3}(\\.\\d{3})+(,\\d+)?$/.test(rawNum)) {\n        rawNum = rawNum.replace(/\\./g, '').replace(',', '.');\n      } else {\n        rawNum = rawNum.replace(/,/g, '');\n      }\n      val = Math.round(parseFloat(rawNum));\n    }\n\n    if (!isNaN(val)) {\n      numbers.push(val);\n    }\n  }\n\n  if (numbers.length === 0) {\n    return { min: null, max: null, currency };\n  }\n\n  if (numbers.length === 1) {\n    return { min: numbers[0], max: numbers[0], currency };\n  }\n\n  return {\n    min: numbers[0],\n    max: numbers[1],\n    currency,\n  };\n}\n\n// raw sin el HTML de la descripción (ya está como texto en `description`) ni logos: ~85% menos espacio.\nconst RAW_DROP = ['description', 'company_logo', 'company_logo_url', 'logo', 'image'];\nfunction slimRaw(item) {\n  return Object.fromEntries(Object.entries(item).filter(([k]) => !RAW_DROP.includes(k)));\n}\n\nfunction normalizeJobType(jt) {\n  if (!jt || typeof jt !== 'string') return null;\n  const s = jt.trim().toLowerCase().replace(/_/g, '-');\n  return s.length > 0 ? s : null;\n}\n\nfunction normalizeRemotive(body) {\n  if (!body) return [];\n\n  let data;\n  try {\n    data = typeof body === 'string' ? JSON.parse(body) : body;\n  } catch (e) {\n    return [];\n  }\n\n  if (!data || typeof data !== 'object') return [];\n  const jobs = data.jobs;\n  if (!Array.isArray(jobs)) return [];\n\n  const results = [];\n\n  for (const item of jobs) {\n    if (!item || typeof item !== 'object') continue;\n    if (item.id === undefined || item.id === null) continue;\n\n    try {\n      const sourceId = String(item.id).trim();\n      const url = clean(item.url);\n      const title = clean(item.title);\n\n      if (!sourceId || !url || !title) continue;\n\n      const company = clean(item.company_name);\n      const location = clean(item.candidate_required_location);\n\n      let tags = [];\n      if (Array.isArray(item.tags)) {\n        const tagSet = new Set();\n        for (const t of item.tags) {\n          const cleanedTag = clean(t);\n          if (cleanedTag) {\n            tagSet.add(cleanedTag.toLowerCase());\n          }\n        }\n        tags = Array.from(tagSet);\n      }\n\n      const category = clean(item.category);\n      const jobType = normalizeJobType(item.job_type);\n\n      const parsedSalary = parseSalary(item.salary);\n      const publishedAt = toIso(item.publication_date);\n      const description = stripHtml(item.description);\n\n      results.push({\n        source: 'remotive',\n        source_id: sourceId,\n        url: url,\n        title: title,\n        company: company,\n        location: location,\n        tags: tags,\n        category: category,\n        job_type: jobType,\n        salary_min: parsedSalary.min,\n        salary_max: parsedSalary.max,\n        salary_currency: parsedSalary.currency,\n        published_at: publishedAt,\n        description: description,\n        raw: slimRaw(item),\n      });\n    } catch (e) {\n      continue;\n    }\n  }\n\n  return results;\n}\n\n\n// Une todas las respuestas (una por URL) y deduplica por source_id (el upsert no admite repetidos).\nconst seen = new Set();\nconst offers = $input.all().flatMap((it) => {\n  const body = it.json?.data ?? '';\n  return normalizeRemotive(typeof body === 'string' ? body : JSON.stringify(body));\n}).filter((o) => !seen.has(o.source_id) && seen.add(o.source_id));\nreturn [{ json: { source: 'remotive', count: offers.length, payload: JSON.stringify(offers) } }];\n",
+        "jsCode": "// GENERATED by scripts/build_wf1.js from scripts/normalizers/remotive.js (unit-tested) — do not edit here.\n/**\n * Normalizador para Remotive.\n * Funciona de forma autocontenida sin require/import.\n */\n\nfunction stripHtml(html) {\n  if (!html || typeof html !== 'string') return null;\n  const text = html\n    .replace(/<style[^>]*>[\\s\\S]*?<\\/style>/gi, '')\n    .replace(/<script[^>]*>[\\s\\S]*?<\\/script>/gi, '')\n    .replace(/<[^>]+>/g, ' ');\n  const decoded = decodeEntities(text);\n  const collapsed = clean(decoded);\n  if (!collapsed) return null;\n  return collapsed.slice(0, 20000);\n}\n\nfunction decodeEntities(str) {\n  if (!str || typeof str !== 'string') return '';\n  const cp = (n, m) => (n > 0 && n <= 0x10ffff ? String.fromCodePoint(n) : m);\n  // &amp; va al final para no decodificar dos veces (\"&amp;lt;\" → \"&lt;\")\n  return str\n    .replace(/&lt;/g, '<')\n    .replace(/&gt;/g, '>')\n    .replace(/&quot;/g, '\"')\n    .replace(/&#39;/g, \"'\")\n    .replace(/&apos;/g, \"'\")\n    .replace(/&nbsp;/g, ' ')\n    .replace(/&#(\\d+);/g, (m, d) => cp(parseInt(d, 10), m))\n    .replace(/&#x([0-9a-fA-F]+);/g, (m, h) => cp(parseInt(h, 16), m))\n    .replace(/&amp;/g, '&');\n}\n\nfunction clean(str) {\n  if (str === null || str === undefined) return null;\n  const s = String(str).replace(/\\s+/g, ' ').trim();\n  return s.length > 0 ? s : null;\n}\n\nfunction toIso(dateStr) {\n  if (!dateStr) return null;\n  try {\n    let s = String(dateStr).trim();\n    if (!s) return null;\n    // Remotive viene sin zona → asumir UTC\n    if (/^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?$/.test(s)) {\n      s += 'Z';\n    }\n    const d = new Date(s);\n    if (isNaN(d.getTime())) return null;\n    return d.toISOString();\n  } catch (e) {\n    return null;\n  }\n}\n\nfunction parseSalary(salaryStr) {\n  if (!salaryStr || typeof salaryStr !== 'string') {\n    return { min: null, max: null, currency: null };\n  }\n\n  const s = salaryStr.trim();\n  if (!s || /competitive/i.test(s)) {\n    return { min: null, max: null, currency: null };\n  }\n  // Solo salarios anuales: por hora/día/semana/mes → null (el texto original queda en raw)\n  if (/(\\/\\s*(h|hr|hour|d|day|wk|week|mo|month)\\b)|\\b(per|an?)\\s+(hour|day|week|month)\\b|\\b(hourly|daily|weekly|monthly)\\b/i.test(s)) {\n    return { min: null, max: null, currency: null };\n  }\n\n  const currency = s.includes('$') ? 'USD' : null;\n\n  // Extraer números e indicador 'k'\n  // Admite \"$35,3k- $52k\", \"$60,000 - $80,000\", \"$14 - $20/hour\"\n  const matches = [...s.matchAll(/(?:[\\$€£])?\\s*(\\d+(?:[.,]\\d+)?)\\s*([kK])?/g)];\n  if (!matches || matches.length === 0) {\n    return { min: null, max: null, currency };\n  }\n\n  const numbers = [];\n  for (const match of matches) {\n    let rawNum = match[1];\n    const isK = !!match[2];\n\n    let val = 0;\n    if (isK) {\n      rawNum = rawNum.replace(',', '.');\n      val = Math.round(parseFloat(rawNum) * 1000);\n    } else {\n      if (/^\\d{1,3}(,\\d{3})+(\\.\\d+)?$/.test(rawNum)) {\n        rawNum = rawNum.replace(/,/g, '');\n      } else if (/^\\d{1,3}(\\.\\d{3})+(,\\d+)?$/.test(rawNum)) {\n        rawNum = rawNum.replace(/\\./g, '').replace(',', '.');\n      } else {\n        rawNum = rawNum.replace(/,/g, '');\n      }\n      val = Math.round(parseFloat(rawNum));\n    }\n\n    if (!isNaN(val)) {\n      numbers.push(val);\n    }\n  }\n\n  if (numbers.length === 0) {\n    return { min: null, max: null, currency };\n  }\n\n  if (numbers.length === 1) {\n    return { min: numbers[0], max: numbers[0], currency };\n  }\n\n  return {\n    min: numbers[0],\n    max: numbers[1],\n    currency,\n  };\n}\n\n// raw sin el HTML de la descripción (ya está como texto en `description`) ni logos: ~85% menos espacio.\nconst RAW_DROP = ['description', 'company_logo', 'company_logo_url', 'logo', 'image'];\nfunction slimRaw(item) {\n  return Object.fromEntries(Object.entries(item).filter(([k]) => !RAW_DROP.includes(k)));\n}\n\nfunction normalizeJobType(jt) {\n  if (!jt || typeof jt !== 'string') return null;\n  const s = jt.trim().toLowerCase().replace(/_/g, '-');\n  return s.length > 0 ? s : null;\n}\n\nfunction normalizeRemotive(body) {\n  if (!body) return [];\n\n  let data;\n  try {\n    data = typeof body === 'string' ? JSON.parse(body) : body;\n  } catch (e) {\n    return [];\n  }\n\n  if (!data || typeof data !== 'object') return [];\n  const jobs = data.jobs;\n  if (!Array.isArray(jobs)) return [];\n\n  const results = [];\n\n  for (const item of jobs) {\n    if (!item || typeof item !== 'object') continue;\n    if (item.id === undefined || item.id === null) continue;\n\n    try {\n      const sourceId = String(item.id).trim();\n      const url = clean(item.url);\n      const title = clean(item.title);\n\n      if (!sourceId || !url || !title) continue;\n\n      const company = clean(item.company_name);\n      const location = clean(item.candidate_required_location);\n\n      let tags = [];\n      if (Array.isArray(item.tags)) {\n        const tagSet = new Set();\n        for (const t of item.tags) {\n          const cleanedTag = clean(t);\n          if (cleanedTag) {\n            tagSet.add(cleanedTag.toLowerCase());\n          }\n        }\n        tags = Array.from(tagSet);\n      }\n\n      const category = clean(item.category);\n      const jobType = normalizeJobType(item.job_type);\n\n      const parsedSalary = parseSalary(item.salary);\n      const publishedAt = toIso(item.publication_date);\n      const description = stripHtml(item.description);\n\n      results.push({\n        source: 'remotive',\n        source_id: sourceId,\n        url: url,\n        title: title,\n        company: company,\n        location: location,\n        tags: tags,\n        category: category,\n        job_type: jobType,\n        salary_min: parsedSalary.min,\n        salary_max: parsedSalary.max,\n        salary_currency: parsedSalary.currency,\n        published_at: publishedAt,\n        description: description,\n        raw: slimRaw(item),\n      });\n    } catch (e) {\n      continue;\n    }\n  }\n\n  return results;\n}\n\n\n// Merge all responses (one per URL) and dedupe by source_id (the upsert rejects repeated keys).\nconst seen = new Set();\nconst offers = $input.all().flatMap((it) => {\n  const body = it.json?.data ?? '';\n  return normalizeRemotive(typeof body === 'string' ? body : JSON.stringify(body));\n}).filter((o) => !seen.has(o.source_id) && seen.add(o.source_id));\nreturn [{ json: { source: 'remotive', count: offers.length, payload: JSON.stringify(offers) } }];\n",
         "mode": "runOnceForAllItems"
       },
       "position": [
-        520,
-        320
+        760,
+        560
       ],
       "type": "n8n-nodes-base.code",
       "typeVersion": 2
@@ -346,7 +440,9 @@
         }
       },
       "id": "pg-remotive",
-      "name": "Guardar Remotive",
+      "name": "Save Remotive",
+      "notes": "Upsert → new / total",
+      "notesInFlow": true,
       "parameters": {
         "operation": "executeQuery",
         "options": {
@@ -355,8 +451,8 @@
         "query": "-- $1 = JSON array de ofertas normalizadas (ver scripts/normalizers/SPEC.md)\nWITH up AS (\n  INSERT INTO offers (source, source_id, url, title, company, location, tags, category, job_type,\n                      salary_min, salary_max, salary_currency, published_at, description, raw)\n  SELECT x.source, x.source_id, x.url, x.title, x.company, x.location,\n         COALESCE(ARRAY(SELECT jsonb_array_elements_text(x.tags)), '{}'),\n         x.category, x.job_type, x.salary_min, x.salary_max, x.salary_currency,\n         x.published_at, x.description, x.raw\n  FROM jsonb_to_recordset($1::jsonb) AS x(\n         source text, source_id text, url text, title text, company text, location text,\n         tags jsonb, category text, job_type text, salary_min int, salary_max int,\n         salary_currency text, published_at timestamptz, description text, raw jsonb)\n  WHERE x.source_id IS NOT NULL AND x.url IS NOT NULL AND x.title IS NOT NULL\n  -- Refresca el contenido (la oferta pudo editarse); NO toca status/score/notified_at.\n  ON CONFLICT (source, source_id) DO UPDATE SET\n    last_seen_at = now(), url = EXCLUDED.url, title = EXCLUDED.title, company = EXCLUDED.company,\n    location = EXCLUDED.location, tags = EXCLUDED.tags, category = EXCLUDED.category, job_type = EXCLUDED.job_type,\n    salary_min = EXCLUDED.salary_min, salary_max = EXCLUDED.salary_max, salary_currency = EXCLUDED.salary_currency,\n    description = EXCLUDED.description, raw = EXCLUDED.raw\n  RETURNING source, (xmax = 0) AS inserted\n)\nSELECT source, count(*) FILTER (WHERE inserted) AS nuevas, count(*) AS total\nFROM up GROUP BY source;\n"
       },
       "position": [
-        780,
-        320
+        1020,
+        560
       ],
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6
@@ -364,7 +460,9 @@
     {
       "id": "http-wwr",
       "maxTries": 2,
-      "name": "Descargar We Work Remotely",
+      "name": "Download We Work Remotely",
+      "notes": "RSS feed",
+      "notesInFlow": true,
       "onError": "continueRegularOutput",
       "parameters": {
         "headerParameters": {
@@ -388,8 +486,8 @@
         "url": "https://weworkremotely.com/remote-jobs.rss"
       },
       "position": [
-        260,
-        540
+        500,
+        800
       ],
       "retryOnFail": true,
       "type": "n8n-nodes-base.httpRequest",
@@ -397,14 +495,16 @@
     },
     {
       "id": "code-wwr",
-      "name": "Normalizar We Work Remotely",
+      "name": "Normalize We Work Remotely",
+      "notes": "normalizeWwr() + dedupe",
+      "notesInFlow": true,
       "parameters": {
-        "jsCode": "// GENERADO por scripts/build_wf1.js desde scripts/normalizers/wwr.js — no editar aquí.\n/**\n * Normalizador para We Work Remotely (WWR RSS feed).\n * Funciona de forma autocontenida sin dependencias externas ni librerías XML.\n */\n\nfunction stripHtml(html) {\n  if (!html || typeof html !== 'string') return null;\n  const text = html\n    .replace(/<style[^>]*>[\\s\\S]*?<\\/style>/gi, '')\n    .replace(/<script[^>]*>[\\s\\S]*?<\\/script>/gi, '')\n    .replace(/<[^>]+>/g, ' ');\n  const decoded = decodeEntities(text);\n  const collapsed = clean(decoded);\n  if (!collapsed) return null;\n  return collapsed.slice(0, 20000);\n}\n\nfunction decodeEntities(str) {\n  if (!str || typeof str !== 'string') return '';\n  const cp = (n, m) => (n > 0 && n <= 0x10ffff ? String.fromCodePoint(n) : m);\n  // &amp; va al final para no decodificar dos veces (\"&amp;lt;\" → \"&lt;\")\n  return str\n    .replace(/&lt;/g, '<')\n    .replace(/&gt;/g, '>')\n    .replace(/&quot;/g, '\"')\n    .replace(/&#39;/g, \"'\")\n    .replace(/&apos;/g, \"'\")\n    .replace(/&nbsp;/g, ' ')\n    .replace(/&#(\\d+);/g, (m, d) => cp(parseInt(d, 10), m))\n    .replace(/&#x([0-9a-fA-F]+);/g, (m, h) => cp(parseInt(h, 16), m))\n    .replace(/&amp;/g, '&');\n}\n\nfunction clean(str) {\n  if (str === null || str === undefined) return null;\n  const s = String(str).replace(/\\s+/g, ' ').trim();\n  return s.length > 0 ? s : null;\n}\n\nfunction toIso(dateStr) {\n  if (!dateStr) return null;\n  try {\n    let s = String(dateStr).trim();\n    if (!s) return null;\n    if (/^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?$/.test(s)) {\n      s += 'Z';\n    }\n    const d = new Date(s);\n    if (isNaN(d.getTime())) return null;\n    return d.toISOString();\n  } catch (e) {\n    return null;\n  }\n}\n\nfunction normalizeJobType(jt) {\n  if (!jt || typeof jt !== 'string') return null;\n  const s = jt.trim().toLowerCase().replace(/_/g, '-');\n  return s.length > 0 ? s : null;\n}\n\nfunction extractTagContent(xmlSnippet, tagName) {\n  // Manejar tags simples y con posibles atributos: <tag ...>content</tag>\n  const regex = new RegExp('<' + tagName + '(?:\\\\s+[^>]*)?>([\\\\s\\\\S]*?)<\\\\/' + tagName + '>', 'i');\n  const match = xmlSnippet.match(regex);\n  if (!match) return null;\n\n  let content = match[1].trim();\n\n  // Si contiene CDATA, extraerlo\n  const cdataMatch = content.match(/^<!\\[CDATA\\[([\\s\\S]*?)\\]\\]>$/i);\n  if (cdataMatch) {\n    content = cdataMatch[1];\n  } else {\n    // Si contiene múltiples CDATAs o está mezclado\n    content = content.replace(/<!\\[CDATA\\[([\\s\\S]*?)\\]\\]>/gi, '$1');\n  }\n\n  // Decodificar entidades\n  return decodeEntities(content);\n}\n\nfunction parseWwrSkills(skillsStr) {\n  if (!skillsStr || typeof skillsStr !== 'string') return [];\n  // wwr: <skills> separado por \",\" y \" and \"\n  // minúsculas, sin espacios extremos, sin duplicados\n  const parts = skillsStr.split(/,|\\band\\b/i);\n  const tagSet = new Set();\n  for (const p of parts) {\n    const cleaned = clean(p);\n    if (cleaned) {\n      tagSet.add(cleaned.toLowerCase());\n    }\n  }\n  return Array.from(tagSet);\n}\n\nfunction normalizeWwr(body) {\n  if (!body || typeof body !== 'string') return [];\n\n  // Extraer items\n  const itemMatches = [...body.matchAll(/<item(?:\\s+[^>]*)?>([\\s\\S]*?)<\\/item>/gi)];\n  if (!itemMatches || itemMatches.length === 0) return [];\n\n  const results = [];\n\n  for (const m of itemMatches) {\n    const itemXml = m[1];\n    try {\n      const rawTitle = extractTagContent(itemXml, 'title') || '';\n      const guid = extractTagContent(itemXml, 'guid');\n      const link = extractTagContent(itemXml, 'link');\n      const pubDate = extractTagContent(itemXml, 'pubDate');\n      const descriptionHtml = extractTagContent(itemXml, 'description');\n      const region = extractTagContent(itemXml, 'region');\n      const country = extractTagContent(itemXml, 'country');\n      const category = extractTagContent(itemXml, 'category');\n      const type = extractTagContent(itemXml, 'type');\n      const skills = extractTagContent(itemXml, 'skills');\n\n      // raw: objeto con los campos del item como strings\n      const raw = {\n        title: rawTitle,\n        guid: guid || '',\n        link: link || '',\n        pubDate: pubDate || '',\n        region: region || '',\n        country: country || '',\n        category: category || '',\n        type: type || '',\n        skills: skills || '',\n      };\n\n      const sourceId = clean(guid) || clean(link);\n      const url = clean(link);\n\n      // Separar title por el PRIMER \": \"\n      let company = null;\n      let title = null;\n\n      const colonIdx = rawTitle.indexOf(': ');\n      if (colonIdx !== -1) {\n        company = clean(rawTitle.slice(0, colonIdx));\n        title = clean(rawTitle.slice(colonIdx + 2));\n      } else {\n        title = clean(rawTitle);\n      }\n\n      if (!sourceId || !url || !title) continue;\n\n      // location: <region> + <country> si existe. \"\" → null\n      const locParts = [];\n      const cleanRegion = clean(region);\n      const cleanCountry = clean(country);\n      if (cleanRegion) locParts.push(cleanRegion);\n      if (cleanCountry) locParts.push(cleanCountry);\n      const location = locParts.length > 0 ? locParts.join(', ') : null;\n\n      const tags = parseWwrSkills(skills);\n      const jobCategory = clean(category);\n      const jobType = normalizeJobType(type);\n      const publishedAt = toIso(pubDate);\n      const description = stripHtml(descriptionHtml);\n\n      results.push({\n        source: 'wwr',\n        source_id: sourceId,\n        url: url,\n        title: title,\n        company: company,\n        location: location,\n        tags: tags,\n        category: jobCategory,\n        job_type: jobType,\n        salary_min: null,\n        salary_max: null,\n        salary_currency: null,\n        published_at: publishedAt,\n        description: description,\n        raw: raw,\n      });\n    } catch (e) {\n      continue;\n    }\n  }\n\n  return results;\n}\n\n\n// Une todas las respuestas (una por URL) y deduplica por source_id (el upsert no admite repetidos).\nconst seen = new Set();\nconst offers = $input.all().flatMap((it) => {\n  const body = it.json?.data ?? '';\n  return normalizeWwr(typeof body === 'string' ? body : JSON.stringify(body));\n}).filter((o) => !seen.has(o.source_id) && seen.add(o.source_id));\nreturn [{ json: { source: 'wwr', count: offers.length, payload: JSON.stringify(offers) } }];\n",
+        "jsCode": "// GENERATED by scripts/build_wf1.js from scripts/normalizers/wwr.js (unit-tested) — do not edit here.\n/**\n * Normalizador para We Work Remotely (WWR RSS feed).\n * Funciona de forma autocontenida sin dependencias externas ni librerías XML.\n */\n\nfunction stripHtml(html) {\n  if (!html || typeof html !== 'string') return null;\n  const text = html\n    .replace(/<style[^>]*>[\\s\\S]*?<\\/style>/gi, '')\n    .replace(/<script[^>]*>[\\s\\S]*?<\\/script>/gi, '')\n    .replace(/<[^>]+>/g, ' ');\n  const decoded = decodeEntities(text);\n  const collapsed = clean(decoded);\n  if (!collapsed) return null;\n  return collapsed.slice(0, 20000);\n}\n\nfunction decodeEntities(str) {\n  if (!str || typeof str !== 'string') return '';\n  const cp = (n, m) => (n > 0 && n <= 0x10ffff ? String.fromCodePoint(n) : m);\n  // &amp; va al final para no decodificar dos veces (\"&amp;lt;\" → \"&lt;\")\n  return str\n    .replace(/&lt;/g, '<')\n    .replace(/&gt;/g, '>')\n    .replace(/&quot;/g, '\"')\n    .replace(/&#39;/g, \"'\")\n    .replace(/&apos;/g, \"'\")\n    .replace(/&nbsp;/g, ' ')\n    .replace(/&#(\\d+);/g, (m, d) => cp(parseInt(d, 10), m))\n    .replace(/&#x([0-9a-fA-F]+);/g, (m, h) => cp(parseInt(h, 16), m))\n    .replace(/&amp;/g, '&');\n}\n\nfunction clean(str) {\n  if (str === null || str === undefined) return null;\n  const s = String(str).replace(/\\s+/g, ' ').trim();\n  return s.length > 0 ? s : null;\n}\n\nfunction toIso(dateStr) {\n  if (!dateStr) return null;\n  try {\n    let s = String(dateStr).trim();\n    if (!s) return null;\n    if (/^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?$/.test(s)) {\n      s += 'Z';\n    }\n    const d = new Date(s);\n    if (isNaN(d.getTime())) return null;\n    return d.toISOString();\n  } catch (e) {\n    return null;\n  }\n}\n\nfunction normalizeJobType(jt) {\n  if (!jt || typeof jt !== 'string') return null;\n  const s = jt.trim().toLowerCase().replace(/_/g, '-');\n  return s.length > 0 ? s : null;\n}\n\nfunction extractTagContent(xmlSnippet, tagName) {\n  // Manejar tags simples y con posibles atributos: <tag ...>content</tag>\n  const regex = new RegExp('<' + tagName + '(?:\\\\s+[^>]*)?>([\\\\s\\\\S]*?)<\\\\/' + tagName + '>', 'i');\n  const match = xmlSnippet.match(regex);\n  if (!match) return null;\n\n  let content = match[1].trim();\n\n  // Si contiene CDATA, extraerlo\n  const cdataMatch = content.match(/^<!\\[CDATA\\[([\\s\\S]*?)\\]\\]>$/i);\n  if (cdataMatch) {\n    content = cdataMatch[1];\n  } else {\n    // Si contiene múltiples CDATAs o está mezclado\n    content = content.replace(/<!\\[CDATA\\[([\\s\\S]*?)\\]\\]>/gi, '$1');\n  }\n\n  // Decodificar entidades\n  return decodeEntities(content);\n}\n\nfunction parseWwrSkills(skillsStr) {\n  if (!skillsStr || typeof skillsStr !== 'string') return [];\n  // wwr: <skills> separado por \",\" y \" and \"\n  // minúsculas, sin espacios extremos, sin duplicados\n  const parts = skillsStr.split(/,|\\band\\b/i);\n  const tagSet = new Set();\n  for (const p of parts) {\n    const cleaned = clean(p);\n    if (cleaned) {\n      tagSet.add(cleaned.toLowerCase());\n    }\n  }\n  return Array.from(tagSet);\n}\n\nfunction normalizeWwr(body) {\n  if (!body || typeof body !== 'string') return [];\n\n  // Extraer items\n  const itemMatches = [...body.matchAll(/<item(?:\\s+[^>]*)?>([\\s\\S]*?)<\\/item>/gi)];\n  if (!itemMatches || itemMatches.length === 0) return [];\n\n  const results = [];\n\n  for (const m of itemMatches) {\n    const itemXml = m[1];\n    try {\n      const rawTitle = extractTagContent(itemXml, 'title') || '';\n      const guid = extractTagContent(itemXml, 'guid');\n      const link = extractTagContent(itemXml, 'link');\n      const pubDate = extractTagContent(itemXml, 'pubDate');\n      const descriptionHtml = extractTagContent(itemXml, 'description');\n      const region = extractTagContent(itemXml, 'region');\n      const country = extractTagContent(itemXml, 'country');\n      const category = extractTagContent(itemXml, 'category');\n      const type = extractTagContent(itemXml, 'type');\n      const skills = extractTagContent(itemXml, 'skills');\n\n      // raw: objeto con los campos del item como strings\n      const raw = {\n        title: rawTitle,\n        guid: guid || '',\n        link: link || '',\n        pubDate: pubDate || '',\n        region: region || '',\n        country: country || '',\n        category: category || '',\n        type: type || '',\n        skills: skills || '',\n      };\n\n      const sourceId = clean(guid) || clean(link);\n      const url = clean(link);\n\n      // Separar title por el PRIMER \": \"\n      let company = null;\n      let title = null;\n\n      const colonIdx = rawTitle.indexOf(': ');\n      if (colonIdx !== -1) {\n        company = clean(rawTitle.slice(0, colonIdx));\n        title = clean(rawTitle.slice(colonIdx + 2));\n      } else {\n        title = clean(rawTitle);\n      }\n\n      if (!sourceId || !url || !title) continue;\n\n      // location: <region> + <country> si existe. \"\" → null\n      const locParts = [];\n      const cleanRegion = clean(region);\n      const cleanCountry = clean(country);\n      if (cleanRegion) locParts.push(cleanRegion);\n      if (cleanCountry) locParts.push(cleanCountry);\n      const location = locParts.length > 0 ? locParts.join(', ') : null;\n\n      const tags = parseWwrSkills(skills);\n      const jobCategory = clean(category);\n      const jobType = normalizeJobType(type);\n      const publishedAt = toIso(pubDate);\n      const description = stripHtml(descriptionHtml);\n\n      results.push({\n        source: 'wwr',\n        source_id: sourceId,\n        url: url,\n        title: title,\n        company: company,\n        location: location,\n        tags: tags,\n        category: jobCategory,\n        job_type: jobType,\n        salary_min: null,\n        salary_max: null,\n        salary_currency: null,\n        published_at: publishedAt,\n        description: description,\n        raw: raw,\n      });\n    } catch (e) {\n      continue;\n    }\n  }\n\n  return results;\n}\n\n\n// Merge all responses (one per URL) and dedupe by source_id (the upsert rejects repeated keys).\nconst seen = new Set();\nconst offers = $input.all().flatMap((it) => {\n  const body = it.json?.data ?? '';\n  return normalizeWwr(typeof body === 'string' ? body : JSON.stringify(body));\n}).filter((o) => !seen.has(o.source_id) && seen.add(o.source_id));\nreturn [{ json: { source: 'wwr', count: offers.length, payload: JSON.stringify(offers) } }];\n",
         "mode": "runOnceForAllItems"
       },
       "position": [
-        520,
-        540
+        760,
+        800
       ],
       "type": "n8n-nodes-base.code",
       "typeVersion": 2
@@ -417,7 +517,9 @@
         }
       },
       "id": "pg-wwr",
-      "name": "Guardar We Work Remotely",
+      "name": "Save We Work Remotely",
+      "notes": "Upsert → new / total",
+      "notesInFlow": true,
       "parameters": {
         "operation": "executeQuery",
         "options": {
@@ -426,8 +528,8 @@
         "query": "-- $1 = JSON array de ofertas normalizadas (ver scripts/normalizers/SPEC.md)\nWITH up AS (\n  INSERT INTO offers (source, source_id, url, title, company, location, tags, category, job_type,\n                      salary_min, salary_max, salary_currency, published_at, description, raw)\n  SELECT x.source, x.source_id, x.url, x.title, x.company, x.location,\n         COALESCE(ARRAY(SELECT jsonb_array_elements_text(x.tags)), '{}'),\n         x.category, x.job_type, x.salary_min, x.salary_max, x.salary_currency,\n         x.published_at, x.description, x.raw\n  FROM jsonb_to_recordset($1::jsonb) AS x(\n         source text, source_id text, url text, title text, company text, location text,\n         tags jsonb, category text, job_type text, salary_min int, salary_max int,\n         salary_currency text, published_at timestamptz, description text, raw jsonb)\n  WHERE x.source_id IS NOT NULL AND x.url IS NOT NULL AND x.title IS NOT NULL\n  -- Refresca el contenido (la oferta pudo editarse); NO toca status/score/notified_at.\n  ON CONFLICT (source, source_id) DO UPDATE SET\n    last_seen_at = now(), url = EXCLUDED.url, title = EXCLUDED.title, company = EXCLUDED.company,\n    location = EXCLUDED.location, tags = EXCLUDED.tags, category = EXCLUDED.category, job_type = EXCLUDED.job_type,\n    salary_min = EXCLUDED.salary_min, salary_max = EXCLUDED.salary_max, salary_currency = EXCLUDED.salary_currency,\n    description = EXCLUDED.description, raw = EXCLUDED.raw\n  RETURNING source, (xmax = 0) AS inserted\n)\nSELECT source, count(*) FILTER (WHERE inserted) AS nuevas, count(*) AS total\nFROM up GROUP BY source;\n"
       },
       "position": [
-        780,
-        540
+        1020,
+        800
       ],
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6
@@ -435,7 +537,9 @@
     {
       "id": "http-n8nforum",
       "maxTries": 2,
-      "name": "Descargar Foro n8n Jobs",
+      "name": "Download n8n Forum",
+      "notes": "RSS feed",
+      "notesInFlow": true,
       "onError": "continueRegularOutput",
       "parameters": {
         "headerParameters": {
@@ -459,8 +563,8 @@
         "url": "https://community.n8n.io/c/jobs/13.rss"
       },
       "position": [
-        260,
-        760
+        500,
+        1040
       ],
       "retryOnFail": true,
       "type": "n8n-nodes-base.httpRequest",
@@ -468,14 +572,16 @@
     },
     {
       "id": "code-n8nforum",
-      "name": "Normalizar Foro n8n Jobs",
+      "name": "Normalize n8n Forum",
+      "notes": "normalizeN8nforum() + dedupe",
+      "notesInFlow": true,
       "parameters": {
-        "jsCode": "// GENERADO por scripts/build_wf1.js desde scripts/normalizers/n8nforum.js — no editar aquí.\n/**\n * Normalizador para n8n Community Forum (Discourse RSS feed).\n * Funciona de forma autocontenida sin dependencias externas ni librerías XML.\n */\n\nfunction stripHtml(html) {\n  if (!html || typeof html !== 'string') return null;\n  const text = html\n    .replace(/<style[^>]*>[\\s\\S]*?<\\/style>/gi, '')\n    .replace(/<script[^>]*>[\\s\\S]*?<\\/script>/gi, '')\n    .replace(/<[^>]+>/g, ' ');\n  const decoded = decodeEntities(text);\n  const collapsed = clean(decoded);\n  if (!collapsed) return null;\n  return collapsed.slice(0, 20000);\n}\n\nfunction decodeEntities(str) {\n  if (!str || typeof str !== 'string') return '';\n  const cp = (n, m) => (n > 0 && n <= 0x10ffff ? String.fromCodePoint(n) : m);\n  // &amp; va al final para no decodificar dos veces (\"&amp;lt;\" → \"&lt;\")\n  return str\n    .replace(/&lt;/g, '<')\n    .replace(/&gt;/g, '>')\n    .replace(/&quot;/g, '\"')\n    .replace(/&#39;/g, \"'\")\n    .replace(/&apos;/g, \"'\")\n    .replace(/&nbsp;/g, ' ')\n    .replace(/&#(\\d+);/g, (m, d) => cp(parseInt(d, 10), m))\n    .replace(/&#x([0-9a-fA-F]+);/g, (m, h) => cp(parseInt(h, 16), m))\n    .replace(/&amp;/g, '&');\n}\n\nfunction clean(str) {\n  if (str === null || str === undefined) return null;\n  const s = String(str).replace(/\\s+/g, ' ').trim();\n  return s.length > 0 ? s : null;\n}\n\nfunction toIso(dateStr) {\n  if (!dateStr) return null;\n  try {\n    let s = String(dateStr).trim();\n    if (!s) return null;\n    if (/^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?$/.test(s)) {\n      s += 'Z';\n    }\n    const d = new Date(s);\n    if (isNaN(d.getTime())) return null;\n    return d.toISOString();\n  } catch (e) {\n    return null;\n  }\n}\n\nfunction extractTagContent(xmlSnippet, tagName) {\n  // Escapar posibles caracteres especiales en el tagName como \":\"\n  const escapedTag = tagName.replace(/([.*+?^=!:${}()|\\[\\]\\/\\\\])/g, '\\\\$1');\n  const regex = new RegExp('<' + escapedTag + '(?:\\\\s+[^>]*)?>([\\\\s\\\\S]*?)<\\\\/' + escapedTag + '>', 'i');\n  const match = xmlSnippet.match(regex);\n  if (!match) return null;\n\n  let content = match[1].trim();\n\n  // Si contiene CDATA, extraerlo\n  const cdataMatch = content.match(/^<!\\[CDATA\\[([\\s\\S]*?)\\]\\]>$/i);\n  if (cdataMatch) {\n    content = cdataMatch[1];\n  } else {\n    // Si contiene múltiples CDATAs o está mezclado\n    content = content.replace(/<!\\[CDATA\\[([\\s\\S]*?)\\]\\]>/gi, '$1');\n  }\n\n  // Decodificar entidades\n  return decodeEntities(content);\n}\n\nfunction detectJobTypeFromTitle(title) {\n  if (!title || typeof title !== 'string') return null;\n\n  // Orden de búsqueda:\n  // \"full-time\"/\"full time\" → \"full-time\"\n  // \"part-time\"/\"part time\" → \"part-time\"\n  // \"freelance\" → \"freelance\"\n  // \"contract\" → \"contract\"\n  // si no, null. (el primero que aparezca en ese orden)\n  if (/\\bfull[- ]time\\b/i.test(title)) {\n    return 'full-time';\n  }\n  if (/\\bpart[- ]time\\b/i.test(title)) {\n    return 'part-time';\n  }\n  if (/\\bfreelance(r|rs)?\\b/i.test(title)) {\n    return 'freelance';\n  }\n  if (/\\bcontract(or|ors)?\\b/i.test(title)) {\n    return 'contract';\n  }\n  return null;\n}\n\nfunction extractSourceId(guid, link) {\n  if (guid) {\n    // \"community.n8n.io-topic-328131\" -> \"328131\" o cualquier número de tema\n    const match = guid.match(/topic-(\\d+)\\s*$/); // ojo: \"n8n\" también contiene un dígito\n    if (match) {\n      return match[1];\n    }\n    return clean(guid);\n  }\n  return clean(link);\n}\n\nfunction normalizeN8nforum(body) {\n  if (!body || typeof body !== 'string') return [];\n\n  const itemMatches = [...body.matchAll(/<item(?:\\s+[^>]*)?>([\\s\\S]*?)<\\/item>/gi)];\n  if (!itemMatches || itemMatches.length === 0) return [];\n\n  const results = [];\n\n  for (const m of itemMatches) {\n    const itemXml = m[1];\n    try {\n      // Omitir fijados y archivados. NO filtrar cerrados: el foro cierra todas las ofertas (se responde por DM).\n      const pinned = extractTagContent(itemXml, 'discourse:topicPinned');\n      if (pinned && pinned.toLowerCase() === 'yes') {\n        continue;\n      }\n      const archived = extractTagContent(itemXml, 'discourse:topicArchived');\n      if (archived && archived.toLowerCase() === 'yes') {\n        continue;\n      }\n\n      const rawTitle = extractTagContent(itemXml, 'title') || '';\n      const guid = extractTagContent(itemXml, 'guid');\n      const link = extractTagContent(itemXml, 'link');\n      const pubDate = extractTagContent(itemXml, 'pubDate');\n      const creator = extractTagContent(itemXml, 'dc:creator');\n      const category = extractTagContent(itemXml, 'category');\n      const descriptionHtml = extractTagContent(itemXml, 'description');\n\n      const sourceId = extractSourceId(guid, link);\n      const url = clean(link);\n      const title = clean(rawTitle);\n\n      if (!sourceId || !url || !title) continue;\n\n      const jobType = detectJobTypeFromTitle(title);\n      const publishedAt = toIso(pubDate);\n      const description = stripHtml(descriptionHtml);\n\n      // raw: { guid, link, pubDate, creator, category } como strings\n      const raw = {\n        guid: guid || '',\n        link: link || '',\n        pubDate: pubDate || '',\n        creator: creator || '',\n        category: category || '',\n      };\n\n      results.push({\n        source: 'n8nforum',\n        source_id: sourceId,\n        url: url,\n        title: title,\n        company: null,\n        location: null,\n        tags: [],\n        category: clean(category),\n        job_type: jobType,\n        salary_min: null,\n        salary_max: null,\n        salary_currency: null,\n        published_at: publishedAt,\n        description: description,\n        raw: raw,\n      });\n    } catch (e) {\n      continue;\n    }\n  }\n\n  return results;\n}\n\n\n// Une todas las respuestas (una por URL) y deduplica por source_id (el upsert no admite repetidos).\nconst seen = new Set();\nconst offers = $input.all().flatMap((it) => {\n  const body = it.json?.data ?? '';\n  return normalizeN8nforum(typeof body === 'string' ? body : JSON.stringify(body));\n}).filter((o) => !seen.has(o.source_id) && seen.add(o.source_id));\nreturn [{ json: { source: 'n8nforum', count: offers.length, payload: JSON.stringify(offers) } }];\n",
+        "jsCode": "// GENERATED by scripts/build_wf1.js from scripts/normalizers/n8nforum.js (unit-tested) — do not edit here.\n/**\n * Normalizador para n8n Community Forum (Discourse RSS feed).\n * Funciona de forma autocontenida sin dependencias externas ni librerías XML.\n */\n\nfunction stripHtml(html) {\n  if (!html || typeof html !== 'string') return null;\n  const text = html\n    .replace(/<style[^>]*>[\\s\\S]*?<\\/style>/gi, '')\n    .replace(/<script[^>]*>[\\s\\S]*?<\\/script>/gi, '')\n    .replace(/<[^>]+>/g, ' ');\n  const decoded = decodeEntities(text);\n  const collapsed = clean(decoded);\n  if (!collapsed) return null;\n  return collapsed.slice(0, 20000);\n}\n\nfunction decodeEntities(str) {\n  if (!str || typeof str !== 'string') return '';\n  const cp = (n, m) => (n > 0 && n <= 0x10ffff ? String.fromCodePoint(n) : m);\n  // &amp; va al final para no decodificar dos veces (\"&amp;lt;\" → \"&lt;\")\n  return str\n    .replace(/&lt;/g, '<')\n    .replace(/&gt;/g, '>')\n    .replace(/&quot;/g, '\"')\n    .replace(/&#39;/g, \"'\")\n    .replace(/&apos;/g, \"'\")\n    .replace(/&nbsp;/g, ' ')\n    .replace(/&#(\\d+);/g, (m, d) => cp(parseInt(d, 10), m))\n    .replace(/&#x([0-9a-fA-F]+);/g, (m, h) => cp(parseInt(h, 16), m))\n    .replace(/&amp;/g, '&');\n}\n\nfunction clean(str) {\n  if (str === null || str === undefined) return null;\n  const s = String(str).replace(/\\s+/g, ' ').trim();\n  return s.length > 0 ? s : null;\n}\n\nfunction toIso(dateStr) {\n  if (!dateStr) return null;\n  try {\n    let s = String(dateStr).trim();\n    if (!s) return null;\n    if (/^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?$/.test(s)) {\n      s += 'Z';\n    }\n    const d = new Date(s);\n    if (isNaN(d.getTime())) return null;\n    return d.toISOString();\n  } catch (e) {\n    return null;\n  }\n}\n\nfunction extractTagContent(xmlSnippet, tagName) {\n  // Escapar posibles caracteres especiales en el tagName como \":\"\n  const escapedTag = tagName.replace(/([.*+?^=!:${}()|\\[\\]\\/\\\\])/g, '\\\\$1');\n  const regex = new RegExp('<' + escapedTag + '(?:\\\\s+[^>]*)?>([\\\\s\\\\S]*?)<\\\\/' + escapedTag + '>', 'i');\n  const match = xmlSnippet.match(regex);\n  if (!match) return null;\n\n  let content = match[1].trim();\n\n  // Si contiene CDATA, extraerlo\n  const cdataMatch = content.match(/^<!\\[CDATA\\[([\\s\\S]*?)\\]\\]>$/i);\n  if (cdataMatch) {\n    content = cdataMatch[1];\n  } else {\n    // Si contiene múltiples CDATAs o está mezclado\n    content = content.replace(/<!\\[CDATA\\[([\\s\\S]*?)\\]\\]>/gi, '$1');\n  }\n\n  // Decodificar entidades\n  return decodeEntities(content);\n}\n\nfunction detectJobTypeFromTitle(title) {\n  if (!title || typeof title !== 'string') return null;\n\n  // Orden de búsqueda:\n  // \"full-time\"/\"full time\" → \"full-time\"\n  // \"part-time\"/\"part time\" → \"part-time\"\n  // \"freelance\" → \"freelance\"\n  // \"contract\" → \"contract\"\n  // si no, null. (el primero que aparezca en ese orden)\n  if (/\\bfull[- ]time\\b/i.test(title)) {\n    return 'full-time';\n  }\n  if (/\\bpart[- ]time\\b/i.test(title)) {\n    return 'part-time';\n  }\n  if (/\\bfreelance(r|rs)?\\b/i.test(title)) {\n    return 'freelance';\n  }\n  if (/\\bcontract(or|ors)?\\b/i.test(title)) {\n    return 'contract';\n  }\n  return null;\n}\n\nfunction extractSourceId(guid, link) {\n  if (guid) {\n    // \"community.n8n.io-topic-328131\" -> \"328131\" o cualquier número de tema\n    const match = guid.match(/topic-(\\d+)\\s*$/); // ojo: \"n8n\" también contiene un dígito\n    if (match) {\n      return match[1];\n    }\n    return clean(guid);\n  }\n  return clean(link);\n}\n\nfunction normalizeN8nforum(body) {\n  if (!body || typeof body !== 'string') return [];\n\n  const itemMatches = [...body.matchAll(/<item(?:\\s+[^>]*)?>([\\s\\S]*?)<\\/item>/gi)];\n  if (!itemMatches || itemMatches.length === 0) return [];\n\n  const results = [];\n\n  for (const m of itemMatches) {\n    const itemXml = m[1];\n    try {\n      // Omitir fijados y archivados. NO filtrar cerrados: el foro cierra todas las ofertas (se responde por DM).\n      const pinned = extractTagContent(itemXml, 'discourse:topicPinned');\n      if (pinned && pinned.toLowerCase() === 'yes') {\n        continue;\n      }\n      const archived = extractTagContent(itemXml, 'discourse:topicArchived');\n      if (archived && archived.toLowerCase() === 'yes') {\n        continue;\n      }\n\n      const rawTitle = extractTagContent(itemXml, 'title') || '';\n      const guid = extractTagContent(itemXml, 'guid');\n      const link = extractTagContent(itemXml, 'link');\n      const pubDate = extractTagContent(itemXml, 'pubDate');\n      const creator = extractTagContent(itemXml, 'dc:creator');\n      const category = extractTagContent(itemXml, 'category');\n      const descriptionHtml = extractTagContent(itemXml, 'description');\n\n      const sourceId = extractSourceId(guid, link);\n      const url = clean(link);\n      const title = clean(rawTitle);\n\n      if (!sourceId || !url || !title) continue;\n\n      const jobType = detectJobTypeFromTitle(title);\n      const publishedAt = toIso(pubDate);\n      const description = stripHtml(descriptionHtml);\n\n      // raw: { guid, link, pubDate, creator, category } como strings\n      const raw = {\n        guid: guid || '',\n        link: link || '',\n        pubDate: pubDate || '',\n        creator: creator || '',\n        category: category || '',\n      };\n\n      results.push({\n        source: 'n8nforum',\n        source_id: sourceId,\n        url: url,\n        title: title,\n        company: null,\n        location: null,\n        tags: [],\n        category: clean(category),\n        job_type: jobType,\n        salary_min: null,\n        salary_max: null,\n        salary_currency: null,\n        published_at: publishedAt,\n        description: description,\n        raw: raw,\n      });\n    } catch (e) {\n      continue;\n    }\n  }\n\n  return results;\n}\n\n\n// Merge all responses (one per URL) and dedupe by source_id (the upsert rejects repeated keys).\nconst seen = new Set();\nconst offers = $input.all().flatMap((it) => {\n  const body = it.json?.data ?? '';\n  return normalizeN8nforum(typeof body === 'string' ? body : JSON.stringify(body));\n}).filter((o) => !seen.has(o.source_id) && seen.add(o.source_id));\nreturn [{ json: { source: 'n8nforum', count: offers.length, payload: JSON.stringify(offers) } }];\n",
         "mode": "runOnceForAllItems"
       },
       "position": [
-        520,
-        760
+        760,
+        1040
       ],
       "type": "n8n-nodes-base.code",
       "typeVersion": 2
@@ -488,7 +594,9 @@
         }
       },
       "id": "pg-n8nforum",
-      "name": "Guardar Foro n8n Jobs",
+      "name": "Save n8n Forum",
+      "notes": "Upsert → new / total",
+      "notesInFlow": true,
       "parameters": {
         "operation": "executeQuery",
         "options": {
@@ -497,22 +605,24 @@
         "query": "-- $1 = JSON array de ofertas normalizadas (ver scripts/normalizers/SPEC.md)\nWITH up AS (\n  INSERT INTO offers (source, source_id, url, title, company, location, tags, category, job_type,\n                      salary_min, salary_max, salary_currency, published_at, description, raw)\n  SELECT x.source, x.source_id, x.url, x.title, x.company, x.location,\n         COALESCE(ARRAY(SELECT jsonb_array_elements_text(x.tags)), '{}'),\n         x.category, x.job_type, x.salary_min, x.salary_max, x.salary_currency,\n         x.published_at, x.description, x.raw\n  FROM jsonb_to_recordset($1::jsonb) AS x(\n         source text, source_id text, url text, title text, company text, location text,\n         tags jsonb, category text, job_type text, salary_min int, salary_max int,\n         salary_currency text, published_at timestamptz, description text, raw jsonb)\n  WHERE x.source_id IS NOT NULL AND x.url IS NOT NULL AND x.title IS NOT NULL\n  -- Refresca el contenido (la oferta pudo editarse); NO toca status/score/notified_at.\n  ON CONFLICT (source, source_id) DO UPDATE SET\n    last_seen_at = now(), url = EXCLUDED.url, title = EXCLUDED.title, company = EXCLUDED.company,\n    location = EXCLUDED.location, tags = EXCLUDED.tags, category = EXCLUDED.category, job_type = EXCLUDED.job_type,\n    salary_min = EXCLUDED.salary_min, salary_max = EXCLUDED.salary_max, salary_currency = EXCLUDED.salary_currency,\n    description = EXCLUDED.description, raw = EXCLUDED.raw\n  RETURNING source, (xmax = 0) AS inserted\n)\nSELECT source, count(*) FILTER (WHERE inserted) AS nuevas, count(*) AS total\nFROM up GROUP BY source;\n"
       },
       "position": [
-        780,
-        760
+        1020,
+        1040
       ],
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6
     },
     {
       "id": "urls-getonbrd",
-      "name": "URLs GetOnBrd",
+      "name": "Build GetOnBrd URLs",
+      "notes": "9 URLs (categories × pages)",
+      "notesInFlow": true,
       "parameters": {
-        "jsCode": "return [\"https://www.getonbrd.com/api/v0/categories/programming/jobs?per_page=100&page=1&expand=%5B%22company%22%2C%22tags%22%2C%22seniority%22%2C%22modality%22%2C%22location_tenants%22%2C%22location_regions%22%5D\",\"https://www.getonbrd.com/api/v0/categories/programming/jobs?per_page=100&page=2&expand=%5B%22company%22%2C%22tags%22%2C%22seniority%22%2C%22modality%22%2C%22location_tenants%22%2C%22location_regions%22%5D\",\"https://www.getonbrd.com/api/v0/categories/programming/jobs?per_page=100&page=3&expand=%5B%22company%22%2C%22tags%22%2C%22seniority%22%2C%22modality%22%2C%22location_tenants%22%2C%22location_regions%22%5D\",\"https://www.getonbrd.com/api/v0/categories/programming/jobs?per_page=100&page=4&expand=%5B%22company%22%2C%22tags%22%2C%22seniority%22%2C%22modality%22%2C%22location_tenants%22%2C%22location_regions%22%5D\",\"https://www.getonbrd.com/api/v0/categories/machine-learning-ai/jobs?per_page=100&page=1&expand=%5B%22company%22%2C%22tags%22%2C%22seniority%22%2C%22modality%22%2C%22location_tenants%22%2C%22location_regions%22%5D\",\"https://www.getonbrd.com/api/v0/categories/machine-learning-ai/jobs?per_page=100&page=2&expand=%5B%22company%22%2C%22tags%22%2C%22seniority%22%2C%22modality%22%2C%22location_tenants%22%2C%22location_regions%22%5D\",\"https://www.getonbrd.com/api/v0/categories/sysadmin-devops-qa/jobs?per_page=100&page=1&expand=%5B%22company%22%2C%22tags%22%2C%22seniority%22%2C%22modality%22%2C%22location_tenants%22%2C%22location_regions%22%5D\",\"https://www.getonbrd.com/api/v0/categories/sysadmin-devops-qa/jobs?per_page=100&page=2&expand=%5B%22company%22%2C%22tags%22%2C%22seniority%22%2C%22modality%22%2C%22location_tenants%22%2C%22location_regions%22%5D\",\"https://www.getonbrd.com/api/v0/categories/sysadmin-devops-qa/jobs?per_page=100&page=3&expand=%5B%22company%22%2C%22tags%22%2C%22seniority%22%2C%22modality%22%2C%22location_tenants%22%2C%22location_regions%22%5D\"].map((url) => ({ json: { url } }));\n",
+        "jsCode": "// One item per URL (categories × pages). Extra pages return [].\nreturn [\"https://www.getonbrd.com/api/v0/categories/programming/jobs?per_page=100&page=1&expand=%5B%22company%22%2C%22tags%22%2C%22seniority%22%2C%22modality%22%2C%22location_tenants%22%2C%22location_regions%22%5D\",\"https://www.getonbrd.com/api/v0/categories/programming/jobs?per_page=100&page=2&expand=%5B%22company%22%2C%22tags%22%2C%22seniority%22%2C%22modality%22%2C%22location_tenants%22%2C%22location_regions%22%5D\",\"https://www.getonbrd.com/api/v0/categories/programming/jobs?per_page=100&page=3&expand=%5B%22company%22%2C%22tags%22%2C%22seniority%22%2C%22modality%22%2C%22location_tenants%22%2C%22location_regions%22%5D\",\"https://www.getonbrd.com/api/v0/categories/programming/jobs?per_page=100&page=4&expand=%5B%22company%22%2C%22tags%22%2C%22seniority%22%2C%22modality%22%2C%22location_tenants%22%2C%22location_regions%22%5D\",\"https://www.getonbrd.com/api/v0/categories/machine-learning-ai/jobs?per_page=100&page=1&expand=%5B%22company%22%2C%22tags%22%2C%22seniority%22%2C%22modality%22%2C%22location_tenants%22%2C%22location_regions%22%5D\",\"https://www.getonbrd.com/api/v0/categories/machine-learning-ai/jobs?per_page=100&page=2&expand=%5B%22company%22%2C%22tags%22%2C%22seniority%22%2C%22modality%22%2C%22location_tenants%22%2C%22location_regions%22%5D\",\"https://www.getonbrd.com/api/v0/categories/sysadmin-devops-qa/jobs?per_page=100&page=1&expand=%5B%22company%22%2C%22tags%22%2C%22seniority%22%2C%22modality%22%2C%22location_tenants%22%2C%22location_regions%22%5D\",\"https://www.getonbrd.com/api/v0/categories/sysadmin-devops-qa/jobs?per_page=100&page=2&expand=%5B%22company%22%2C%22tags%22%2C%22seniority%22%2C%22modality%22%2C%22location_tenants%22%2C%22location_regions%22%5D\",\"https://www.getonbrd.com/api/v0/categories/sysadmin-devops-qa/jobs?per_page=100&page=3&expand=%5B%22company%22%2C%22tags%22%2C%22seniority%22%2C%22modality%22%2C%22location_tenants%22%2C%22location_regions%22%5D\"].map((url) => ({ json: { url } }));\n",
         "mode": "runOnceForAllItems"
       },
       "position": [
         260,
-        980
+        1280
       ],
       "type": "n8n-nodes-base.code",
       "typeVersion": 2
@@ -520,7 +630,9 @@
     {
       "id": "http-getonbrd",
       "maxTries": 2,
-      "name": "Descargar GetOnBrd",
+      "name": "Download GetOnBrd",
+      "notes": "1 request / 1.5 s (polite)",
+      "notesInFlow": true,
       "onError": "continueRegularOutput",
       "parameters": {
         "headerParameters": {
@@ -550,8 +662,8 @@
         "url": "={{ $json.url }}"
       },
       "position": [
-        400,
-        980
+        500,
+        1280
       ],
       "retryOnFail": true,
       "type": "n8n-nodes-base.httpRequest",
@@ -559,14 +671,16 @@
     },
     {
       "id": "code-getonbrd",
-      "name": "Normalizar GetOnBrd",
+      "name": "Normalize GetOnBrd",
+      "notes": "normalizeGetonbrd() + dedupe",
+      "notesInFlow": true,
       "parameters": {
-        "jsCode": "// GENERADO por scripts/build_wf1.js desde scripts/normalizers/getonbrd.js — no editar aquí.\n/**\n * Normalizador para GetOnBrd (API v0).\n * Funciona de forma autocontenida sin require/import.\n */\n\nfunction stripHtml(html) {\n  if (!html || typeof html !== 'string') return null;\n  const text = html\n    .replace(/<style[^>]*>[\\s\\S]*?<\\/style>/gi, '')\n    .replace(/<script[^>]*>[\\s\\S]*?<\\/script>/gi, '')\n    .replace(/<[^>]+>/g, ' ');\n  const decoded = decodeEntities(text);\n  const collapsed = clean(decoded);\n  if (!collapsed) return null;\n  return collapsed.slice(0, 20000);\n}\n\nfunction decodeEntities(str) {\n  if (!str || typeof str !== 'string') return '';\n  const cp = (n, m) => (n > 0 && n <= 0x10ffff ? String.fromCodePoint(n) : m);\n  // &amp; va al final para no decodificar dos veces (\"&amp;lt;\" → \"&lt;\")\n  return str\n    .replace(/&lt;/g, '<')\n    .replace(/&gt;/g, '>')\n    .replace(/&quot;/g, '\"')\n    .replace(/&#39;/g, \"'\")\n    .replace(/&apos;/g, \"'\")\n    .replace(/&nbsp;/g, ' ')\n    .replace(/&#(\\d+);/g, (m, d) => cp(parseInt(d, 10), m))\n    .replace(/&#x([0-9a-fA-F]+);/g, (m, h) => cp(parseInt(h, 16), m))\n    .replace(/&amp;/g, '&');\n}\n\nfunction clean(str) {\n  if (str === null || str === undefined) return null;\n  const s = String(str).replace(/\\s+/g, ' ').trim();\n  return s.length > 0 ? s : null;\n}\n\nfunction toIso(dateStr) {\n  if (!dateStr) return null;\n  try {\n    let s = String(dateStr).trim();\n    if (!s) return null;\n    if (/^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?$/.test(s)) {\n      s += 'Z';\n    }\n    const d = new Date(s);\n    if (isNaN(d.getTime())) return null;\n    return d.toISOString();\n  } catch (e) {\n    return null;\n  }\n}\n\nfunction normalizeJobType(jt) {\n  if (!jt || typeof jt !== 'string') return null;\n  const s = jt.trim().toLowerCase().replace(/[\\s_]+/g, '-');\n  return s.length > 0 ? s : null;\n}\n\nconst RAW_DROP_KEYS = [\n  'description',\n  'functions',\n  'desirable',\n  'benefits',\n  'projects',\n  'description_headline',\n  'functions_headline',\n  'benefits_headline',\n  'desirable_headline',\n];\n\nfunction slimRawGetonbrd(attributes) {\n  const raw = {};\n  for (const [k, v] of Object.entries(attributes)) {\n    if (RAW_DROP_KEYS.includes(k)) continue;\n    raw[k] = v;\n  }\n\n  // Países/regiones expandidos → lista de nombres (o de ids si no vienen expandidos)\n  for (const k of ['location_tenants', 'location_regions']) {\n    const rel = attributes[k];\n    if (rel && Array.isArray(rel.data)) {\n      raw[k] = rel.data.map((d) => clean(d && d.attributes && d.attributes.name) || (d && d.id)).filter(Boolean);\n    }\n  }\n\n  // Reducir company, tags, seniority, modality a su nombre (string)\n  if (attributes.company && attributes.company.data && attributes.company.data.attributes) {\n    raw.company = clean(attributes.company.data.attributes.name);\n  } else {\n    raw.company = null;\n  }\n\n  if (attributes.seniority && attributes.seniority.data && attributes.seniority.data.attributes) {\n    raw.seniority = clean(attributes.seniority.data.attributes.name);\n    raw.seniority_name = raw.seniority;\n  } else {\n    raw.seniority = null;\n    raw.seniority_name = null;\n  }\n\n  if (attributes.modality && attributes.modality.data && attributes.modality.data.attributes) {\n    raw.modality = clean(attributes.modality.data.attributes.name);\n  } else {\n    raw.modality = null;\n  }\n\n  if (attributes.tags && attributes.tags.data && Array.isArray(attributes.tags.data)) {\n    raw.tags = attributes.tags.data\n      .map((t) => t && t.attributes && clean(t.attributes.name))\n      .filter(Boolean)\n      .join(', ');\n  } else {\n    raw.tags = null;\n  }\n\n  if (attributes.lang !== undefined) {\n    raw.lang = attributes.lang;\n  }\n\n  return raw;\n}\n\nfunction normalizeGetonbrd(body) {\n  if (!body) return [];\n\n  let parsed;\n  try {\n    parsed = typeof body === 'string' ? JSON.parse(body) : body;\n  } catch (e) {\n    return [];\n  }\n\n  if (!parsed || typeof parsed !== 'object' || !Array.isArray(parsed.data)) {\n    return [];\n  }\n\n  const results = [];\n\n  for (const item of parsed.data) {\n    if (!item || typeof item !== 'object') continue;\n\n    try {\n      const sourceId = clean(item.id);\n      const url = clean(item.links && item.links.public_url);\n      const attrs = item.attributes;\n      if (!sourceId || !url || !attrs || typeof attrs !== 'object') continue;\n\n      // Solo ofertas remotas: attributes.remote_modality in { 'fully_remote', 'remote_local' }\n      const remoteModality = attrs.remote_modality;\n      if (remoteModality !== 'fully_remote' && remoteModality !== 'remote_local') {\n        continue;\n      }\n\n      const title = clean(attrs.title);\n      if (!title) continue;\n\n      // Company\n      let company = null;\n      if (attrs.company && attrs.company.data && attrs.company.data.attributes) {\n        company = clean(attrs.company.data.attributes.name);\n      }\n\n      // Location\n      let location = null;\n      if (remoteModality === 'fully_remote') {\n        location = 'Remote (worldwide)';\n      } else if (remoteModality === 'remote_local') {\n        // Con expand, location_tenants (países) y location_regions traen nombres; `countries` suele ser [\"Remote\"].\n        const named = (rel) => ((rel && Array.isArray(rel.data)) ? rel.data : [])\n          .map((d) => clean(d && d.attributes && d.attributes.name)).filter(Boolean);\n        const places = [...named(attrs.location_tenants), ...named(attrs.location_regions)];\n        const countries = places.length > 0 ? places\n          : Array.isArray(attrs.countries) ? attrs.countries.map((c) => clean(c)).filter(Boolean) : [];\n        const isOnlyRemote = countries.length === 0 || (countries.length === 1 && countries[0].toLowerCase() === 'remote');\n        if (isOnlyRemote) {\n          location = 'Remote (local)';\n        } else {\n          location = 'Remote (' + countries.join(', ') + ')';\n        }\n      }\n\n      // Tags: attributes.tags.data[].attributes.name (minúsculas, únicos)\n      let tags = [];\n      if (attrs.tags && Array.isArray(attrs.tags.data)) {\n        const tagSet = new Set();\n        for (const t of attrs.tags.data) {\n          if (t && t.attributes && t.attributes.name) {\n            const tagName = clean(t.attributes.name);\n            if (tagName) {\n              tagSet.add(tagName.toLowerCase());\n            }\n          }\n        }\n        tags = Array.from(tagSet);\n      }\n\n      // Category\n      const category = clean(attrs.category_name);\n\n      // Job type\n      let jobType = null;\n      if (attrs.modality && attrs.modality.data && attrs.modality.data.attributes) {\n        jobType = normalizeJobType(attrs.modality.data.attributes.name);\n      }\n\n      // Salario: min_salary/max_salary son MENSUALES en USD -> guardar ANUAL (* 12).\n      // Si uno solo existe, usarlo en ambos.\n      let salaryMin = null;\n      let salaryMax = null;\n      let salaryCurrency = null;\n\n      const rawMin = typeof attrs.min_salary === 'number' && attrs.min_salary > 0 ? attrs.min_salary : null;\n      const rawMax = typeof attrs.max_salary === 'number' && attrs.max_salary > 0 ? attrs.max_salary : null;\n\n      if (rawMin !== null || rawMax !== null) {\n        const minMonthly = rawMin !== null ? rawMin : rawMax;\n        const maxMonthly = rawMax !== null ? rawMax : rawMin;\n        salaryMin = Math.round(minMonthly * 12);\n        salaryMax = Math.round(maxMonthly * 12);\n        salaryCurrency = 'USD';\n      }\n\n      // published_at: attributes.published_at es epoch en SEGUNDOS -> ISO\n      let publishedAt = null;\n      if (attrs.published_at !== null && attrs.published_at !== undefined) {\n        const numSec = Number(attrs.published_at);\n        if (!isNaN(numSec) && numSec > 0) {\n          const d = new Date(numSec * 1000);\n          if (!isNaN(d.getTime())) {\n            publishedAt = d.toISOString();\n          }\n        }\n      }\n\n      // description: concatenar HTML de description, functions, desirable, benefits (los que existan, separados por un salto) -> stripHtml (máx 20000)\n      const descParts = [];\n      if (attrs.description && typeof attrs.description === 'string' && attrs.description.trim()) {\n        descParts.push(attrs.description.trim());\n      }\n      if (attrs.functions && typeof attrs.functions === 'string' && attrs.functions.trim()) {\n        descParts.push(attrs.functions.trim());\n      }\n      if (attrs.desirable && typeof attrs.desirable === 'string' && attrs.desirable.trim()) {\n        descParts.push(attrs.desirable.trim());\n      }\n      if (attrs.benefits && typeof attrs.benefits === 'string' && attrs.benefits.trim()) {\n        descParts.push(attrs.benefits.trim());\n      }\n\n      const combinedHtml = descParts.join('\\n');\n      const description = stripHtml(combinedHtml);\n\n      // raw\n      const raw = slimRawGetonbrd(attrs);\n\n      results.push({\n        source: 'getonbrd',\n        source_id: sourceId,\n        url: url,\n        title: title,\n        company: company,\n        location: location,\n        tags: tags,\n        category: category,\n        job_type: jobType,\n        salary_min: salaryMin,\n        salary_max: salaryMax,\n        salary_currency: salaryCurrency,\n        published_at: publishedAt,\n        description: description,\n        raw: raw,\n      });\n    } catch (e) {\n      continue;\n    }\n  }\n\n  return results;\n}\n\n\n// Une todas las respuestas (una por URL) y deduplica por source_id (el upsert no admite repetidos).\nconst seen = new Set();\nconst offers = $input.all().flatMap((it) => {\n  const body = it.json?.data ?? '';\n  return normalizeGetonbrd(typeof body === 'string' ? body : JSON.stringify(body));\n}).filter((o) => !seen.has(o.source_id) && seen.add(o.source_id));\nreturn [{ json: { source: 'getonbrd', count: offers.length, payload: JSON.stringify(offers) } }];\n",
+        "jsCode": "// GENERATED by scripts/build_wf1.js from scripts/normalizers/getonbrd.js (unit-tested) — do not edit here.\n/**\n * Normalizador para GetOnBrd (API v0).\n * Funciona de forma autocontenida sin require/import.\n */\n\nfunction stripHtml(html) {\n  if (!html || typeof html !== 'string') return null;\n  const text = html\n    .replace(/<style[^>]*>[\\s\\S]*?<\\/style>/gi, '')\n    .replace(/<script[^>]*>[\\s\\S]*?<\\/script>/gi, '')\n    .replace(/<[^>]+>/g, ' ');\n  const decoded = decodeEntities(text);\n  const collapsed = clean(decoded);\n  if (!collapsed) return null;\n  return collapsed.slice(0, 20000);\n}\n\nfunction decodeEntities(str) {\n  if (!str || typeof str !== 'string') return '';\n  const cp = (n, m) => (n > 0 && n <= 0x10ffff ? String.fromCodePoint(n) : m);\n  // &amp; va al final para no decodificar dos veces (\"&amp;lt;\" → \"&lt;\")\n  return str\n    .replace(/&lt;/g, '<')\n    .replace(/&gt;/g, '>')\n    .replace(/&quot;/g, '\"')\n    .replace(/&#39;/g, \"'\")\n    .replace(/&apos;/g, \"'\")\n    .replace(/&nbsp;/g, ' ')\n    .replace(/&#(\\d+);/g, (m, d) => cp(parseInt(d, 10), m))\n    .replace(/&#x([0-9a-fA-F]+);/g, (m, h) => cp(parseInt(h, 16), m))\n    .replace(/&amp;/g, '&');\n}\n\nfunction clean(str) {\n  if (str === null || str === undefined) return null;\n  const s = String(str).replace(/\\s+/g, ' ').trim();\n  return s.length > 0 ? s : null;\n}\n\nfunction toIso(dateStr) {\n  if (!dateStr) return null;\n  try {\n    let s = String(dateStr).trim();\n    if (!s) return null;\n    if (/^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?$/.test(s)) {\n      s += 'Z';\n    }\n    const d = new Date(s);\n    if (isNaN(d.getTime())) return null;\n    return d.toISOString();\n  } catch (e) {\n    return null;\n  }\n}\n\nfunction normalizeJobType(jt) {\n  if (!jt || typeof jt !== 'string') return null;\n  const s = jt.trim().toLowerCase().replace(/[\\s_]+/g, '-');\n  return s.length > 0 ? s : null;\n}\n\nconst RAW_DROP_KEYS = [\n  'description',\n  'functions',\n  'desirable',\n  'benefits',\n  'projects',\n  'description_headline',\n  'functions_headline',\n  'benefits_headline',\n  'desirable_headline',\n];\n\nfunction slimRawGetonbrd(attributes) {\n  const raw = {};\n  for (const [k, v] of Object.entries(attributes)) {\n    if (RAW_DROP_KEYS.includes(k)) continue;\n    raw[k] = v;\n  }\n\n  // Países/regiones expandidos → lista de nombres (o de ids si no vienen expandidos)\n  for (const k of ['location_tenants', 'location_regions']) {\n    const rel = attributes[k];\n    if (rel && Array.isArray(rel.data)) {\n      raw[k] = rel.data.map((d) => clean(d && d.attributes && d.attributes.name) || (d && d.id)).filter(Boolean);\n    }\n  }\n\n  // Reducir company, tags, seniority, modality a su nombre (string)\n  if (attributes.company && attributes.company.data && attributes.company.data.attributes) {\n    raw.company = clean(attributes.company.data.attributes.name);\n  } else {\n    raw.company = null;\n  }\n\n  if (attributes.seniority && attributes.seniority.data && attributes.seniority.data.attributes) {\n    raw.seniority = clean(attributes.seniority.data.attributes.name);\n    raw.seniority_name = raw.seniority;\n  } else {\n    raw.seniority = null;\n    raw.seniority_name = null;\n  }\n\n  if (attributes.modality && attributes.modality.data && attributes.modality.data.attributes) {\n    raw.modality = clean(attributes.modality.data.attributes.name);\n  } else {\n    raw.modality = null;\n  }\n\n  if (attributes.tags && attributes.tags.data && Array.isArray(attributes.tags.data)) {\n    raw.tags = attributes.tags.data\n      .map((t) => t && t.attributes && clean(t.attributes.name))\n      .filter(Boolean)\n      .join(', ');\n  } else {\n    raw.tags = null;\n  }\n\n  if (attributes.lang !== undefined) {\n    raw.lang = attributes.lang;\n  }\n\n  return raw;\n}\n\nfunction normalizeGetonbrd(body) {\n  if (!body) return [];\n\n  let parsed;\n  try {\n    parsed = typeof body === 'string' ? JSON.parse(body) : body;\n  } catch (e) {\n    return [];\n  }\n\n  if (!parsed || typeof parsed !== 'object' || !Array.isArray(parsed.data)) {\n    return [];\n  }\n\n  const results = [];\n\n  for (const item of parsed.data) {\n    if (!item || typeof item !== 'object') continue;\n\n    try {\n      const sourceId = clean(item.id);\n      const url = clean(item.links && item.links.public_url);\n      const attrs = item.attributes;\n      if (!sourceId || !url || !attrs || typeof attrs !== 'object') continue;\n\n      // Solo ofertas remotas: attributes.remote_modality in { 'fully_remote', 'remote_local' }\n      const remoteModality = attrs.remote_modality;\n      if (remoteModality !== 'fully_remote' && remoteModality !== 'remote_local') {\n        continue;\n      }\n\n      const title = clean(attrs.title);\n      if (!title) continue;\n\n      // Company\n      let company = null;\n      if (attrs.company && attrs.company.data && attrs.company.data.attributes) {\n        company = clean(attrs.company.data.attributes.name);\n      }\n\n      // Location\n      let location = null;\n      if (remoteModality === 'fully_remote') {\n        location = 'Remote (worldwide)';\n      } else if (remoteModality === 'remote_local') {\n        // Con expand, location_tenants (países) y location_regions traen nombres; `countries` suele ser [\"Remote\"].\n        const named = (rel) => ((rel && Array.isArray(rel.data)) ? rel.data : [])\n          .map((d) => clean(d && d.attributes && d.attributes.name)).filter(Boolean);\n        const places = [...named(attrs.location_tenants), ...named(attrs.location_regions)];\n        const countries = places.length > 0 ? places\n          : Array.isArray(attrs.countries) ? attrs.countries.map((c) => clean(c)).filter(Boolean) : [];\n        const isOnlyRemote = countries.length === 0 || (countries.length === 1 && countries[0].toLowerCase() === 'remote');\n        if (isOnlyRemote) {\n          location = 'Remote (local)';\n        } else {\n          location = 'Remote (' + countries.join(', ') + ')';\n        }\n      }\n\n      // Tags: attributes.tags.data[].attributes.name (minúsculas, únicos)\n      let tags = [];\n      if (attrs.tags && Array.isArray(attrs.tags.data)) {\n        const tagSet = new Set();\n        for (const t of attrs.tags.data) {\n          if (t && t.attributes && t.attributes.name) {\n            const tagName = clean(t.attributes.name);\n            if (tagName) {\n              tagSet.add(tagName.toLowerCase());\n            }\n          }\n        }\n        tags = Array.from(tagSet);\n      }\n\n      // Category\n      const category = clean(attrs.category_name);\n\n      // Job type\n      let jobType = null;\n      if (attrs.modality && attrs.modality.data && attrs.modality.data.attributes) {\n        jobType = normalizeJobType(attrs.modality.data.attributes.name);\n      }\n\n      // Salario: min_salary/max_salary son MENSUALES en USD -> guardar ANUAL (* 12).\n      // Si uno solo existe, usarlo en ambos.\n      let salaryMin = null;\n      let salaryMax = null;\n      let salaryCurrency = null;\n\n      const rawMin = typeof attrs.min_salary === 'number' && attrs.min_salary > 0 ? attrs.min_salary : null;\n      const rawMax = typeof attrs.max_salary === 'number' && attrs.max_salary > 0 ? attrs.max_salary : null;\n\n      if (rawMin !== null || rawMax !== null) {\n        const minMonthly = rawMin !== null ? rawMin : rawMax;\n        const maxMonthly = rawMax !== null ? rawMax : rawMin;\n        salaryMin = Math.round(minMonthly * 12);\n        salaryMax = Math.round(maxMonthly * 12);\n        salaryCurrency = 'USD';\n      }\n\n      // published_at: attributes.published_at es epoch en SEGUNDOS -> ISO\n      let publishedAt = null;\n      if (attrs.published_at !== null && attrs.published_at !== undefined) {\n        const numSec = Number(attrs.published_at);\n        if (!isNaN(numSec) && numSec > 0) {\n          const d = new Date(numSec * 1000);\n          if (!isNaN(d.getTime())) {\n            publishedAt = d.toISOString();\n          }\n        }\n      }\n\n      // description: concatenar HTML de description, functions, desirable, benefits (los que existan, separados por un salto) -> stripHtml (máx 20000)\n      const descParts = [];\n      if (attrs.description && typeof attrs.description === 'string' && attrs.description.trim()) {\n        descParts.push(attrs.description.trim());\n      }\n      if (attrs.functions && typeof attrs.functions === 'string' && attrs.functions.trim()) {\n        descParts.push(attrs.functions.trim());\n      }\n      if (attrs.desirable && typeof attrs.desirable === 'string' && attrs.desirable.trim()) {\n        descParts.push(attrs.desirable.trim());\n      }\n      if (attrs.benefits && typeof attrs.benefits === 'string' && attrs.benefits.trim()) {\n        descParts.push(attrs.benefits.trim());\n      }\n\n      const combinedHtml = descParts.join('\\n');\n      const description = stripHtml(combinedHtml);\n\n      // raw\n      const raw = slimRawGetonbrd(attrs);\n\n      results.push({\n        source: 'getonbrd',\n        source_id: sourceId,\n        url: url,\n        title: title,\n        company: company,\n        location: location,\n        tags: tags,\n        category: category,\n        job_type: jobType,\n        salary_min: salaryMin,\n        salary_max: salaryMax,\n        salary_currency: salaryCurrency,\n        published_at: publishedAt,\n        description: description,\n        raw: raw,\n      });\n    } catch (e) {\n      continue;\n    }\n  }\n\n  return results;\n}\n\n\n// Merge all responses (one per URL) and dedupe by source_id (the upsert rejects repeated keys).\nconst seen = new Set();\nconst offers = $input.all().flatMap((it) => {\n  const body = it.json?.data ?? '';\n  return normalizeGetonbrd(typeof body === 'string' ? body : JSON.stringify(body));\n}).filter((o) => !seen.has(o.source_id) && seen.add(o.source_id));\nreturn [{ json: { source: 'getonbrd', count: offers.length, payload: JSON.stringify(offers) } }];\n",
         "mode": "runOnceForAllItems"
       },
       "position": [
-        520,
-        980
+        760,
+        1280
       ],
       "type": "n8n-nodes-base.code",
       "typeVersion": 2
@@ -579,7 +693,9 @@
         }
       },
       "id": "pg-getonbrd",
-      "name": "Guardar GetOnBrd",
+      "name": "Save GetOnBrd",
+      "notes": "Upsert → new / total",
+      "notesInFlow": true,
       "parameters": {
         "operation": "executeQuery",
         "options": {
@@ -588,8 +704,8 @@
         "query": "-- $1 = JSON array de ofertas normalizadas (ver scripts/normalizers/SPEC.md)\nWITH up AS (\n  INSERT INTO offers (source, source_id, url, title, company, location, tags, category, job_type,\n                      salary_min, salary_max, salary_currency, published_at, description, raw)\n  SELECT x.source, x.source_id, x.url, x.title, x.company, x.location,\n         COALESCE(ARRAY(SELECT jsonb_array_elements_text(x.tags)), '{}'),\n         x.category, x.job_type, x.salary_min, x.salary_max, x.salary_currency,\n         x.published_at, x.description, x.raw\n  FROM jsonb_to_recordset($1::jsonb) AS x(\n         source text, source_id text, url text, title text, company text, location text,\n         tags jsonb, category text, job_type text, salary_min int, salary_max int,\n         salary_currency text, published_at timestamptz, description text, raw jsonb)\n  WHERE x.source_id IS NOT NULL AND x.url IS NOT NULL AND x.title IS NOT NULL\n  -- Refresca el contenido (la oferta pudo editarse); NO toca status/score/notified_at.\n  ON CONFLICT (source, source_id) DO UPDATE SET\n    last_seen_at = now(), url = EXCLUDED.url, title = EXCLUDED.title, company = EXCLUDED.company,\n    location = EXCLUDED.location, tags = EXCLUDED.tags, category = EXCLUDED.category, job_type = EXCLUDED.job_type,\n    salary_min = EXCLUDED.salary_min, salary_max = EXCLUDED.salary_max, salary_currency = EXCLUDED.salary_currency,\n    description = EXCLUDED.description, raw = EXCLUDED.raw\n  RETURNING source, (xmax = 0) AS inserted\n)\nSELECT source, count(*) FILTER (WHERE inserted) AS nuevas, count(*) AS total\nFROM up GROUP BY source;\n"
       },
       "position": [
-        780,
-        980
+        1020,
+        1280
       ],
       "type": "n8n-nodes-base.postgres",
       "typeVersion": 2.6

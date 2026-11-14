@@ -81,7 +81,9 @@ node --test scripts/normalizers/      # tests
 node scripts/build_wf1.js && scripts/n8n.sh push n8n/workflows/wf1-recoleccion.json
 ```
 
-More details in [`docs/INFRA.md`](docs/INFRA.md). Some code comments and node names are in Spanish.
+More details in [`docs/INFRA.md`](docs/INFRA.md). Some code comments and docs are in Spanish.
+
+Every workflow is self-documented in the n8n canvas: a header note, one colored note per stage and a short note under each node.
 
 ## Structure
 

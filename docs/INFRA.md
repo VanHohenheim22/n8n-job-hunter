@@ -49,3 +49,10 @@ node scripts/build_wf2.js && scripts/n8n.sh push n8n/workflows/wf2-filtro-avisos
 docker compose exec -T postgres psql -U n8n -d jobs -c "update offers set status='new' where status in ('candidate','filtered_out') and notified_at is null"
 ```
 Credenciales: "Telegram Empliosbot" (`0oBvnvYgYSOOhmhG`), "Postgres jobs".
+
+## Repo público (portafolio)
+https://github.com/VanHohenheim22/n8n-job-hunter · copia local en `~/proyectos/n8n-job-hunter`.
+Actualizar: commit aquí → `scripts/export_public.sh ~/proyectos/n8n-job-hunter` → commit y push allí
+(autor: `116129051+VanHohenheim22@users.noreply.github.com`; token `GITHUB_API_KEY` en `infra/.env` vía
+`git -c http.extraHeader="Authorization: Basic $(printf 'VanHohenheim22:%s' "$T" | base64 -w0)" push`).
+El script exporta una lista blanca, reemplaza el chat_id y aborta si detecta datos personales o claves.
