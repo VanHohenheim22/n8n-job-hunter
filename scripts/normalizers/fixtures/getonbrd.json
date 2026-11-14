@@ -1,0 +1,893 @@
+{
+  "data": [
+    {
+      "id": "ai-engineer-interfell-remote",
+      "type": "job",
+      "attributes": {
+        "title": "AI Engineer",
+        "description_headline": "Requerimientos del cargo",
+        "description": "<ul><li>TypeScript: experiencia sólida desarrollando software listo para producción.</li><li>Agentes de IA y sistemas multiagente: experiencia práctica construyendo y orquestando sistemas basados en LLM en producción, incluyendo roles, coordinación, transferencia entre agentes, uso de herramientas, memoria y gestión de contexto.</li><li>Frameworks y proveedores de IA: experiencia con Vercel AI SDK e integración de distintos proveedores de LLM, con criterio para seleccionar las herramientas y modelos adecuados.</li><li>Arquitectura e integración de sistemas: experiencia integrando APIs, bases de datos y código existente, incluyendo implementación de RAG.</li><li>Streaming y baja latencia: experiencia desarrollando aplicaciones de IA en tiempo real o con respuestas en streaming.</li><li>Evaluación y calidad de IA: experiencia creando datasets de prueba, sistemas de scoring y pruebas de regresión para evaluar la calidad y confiabilidad de los agentes.</li><li>Observabilidad y depuración: experiencia con tracing, logs estructurados y monitoreo de coste, latencia y calidad de las respuestas.</li><li>Seguridad en sistemas de IA: conocimiento de riesgos y medidas de protección para aplicaciones basadas en agentes autónomos.</li></ul>",
+        "projects": "<p>Vixiees está desarrollando una plataforma de producción en la que los agentes de IA forman parte de la infraestructura central del producto. La plataforma utiliza sistemas multiagente para gestionar flujos de trabajo dirigidos a clientes y procesos internos.</p><p>Position Information: El AI Engineer será responsable de diseñar, desarrollar, integrar y mantener agentes de inteligencia artificial en producción, asegurando su fiabilidad, calidad, observabilidad y capacidad de escalar. Trabajará con agentes conversacionales de texto, WhatsApp y voz, así como con agentes que analizan dashboards y datos de negocio.</p>",
+        "functions_headline": "Funciones del cargo",
+        "functions": "<ul><li>Diseñar y desarrollar sistemas de orquestación multiagente, definiendo roles, herramientas, memoria y lógica de transferencia entre agentes.</li><li>Contribuir al desarrollo de agentes de voz y llamadas, optimizando el streaming, la latencia y la fluidez de las conversaciones en tiempo real.</li><li>Gestionar el ciclo de vida completo de las funcionalidades de IA: diseño de prompts y arquitectura, integración con APIs y fuentes de datos, pruebas, despliegue y monitorización.</li><li>Desarrollar y mantener pipelines de evaluación de IA, incluyendo datasets, sistemas de puntuación automatizada y evaluaciones mediante LLM-as-a-judge.</li><li>Implementar mecanismos de observabilidad mediante logs estructurados, trazabilidad de decisiones y llamadas a herramientas, y métricas de coste, latencia y precisión.</li><li>Depurar y resolver problemas de comportamiento de agentes en producción a través de canales conversacionales.</li><li>Mejorar la fiabilidad y seguridad de los agentes, incorporando controles para sistemas autónomos que ejecutan acciones y toman decisiones.</li><li>Colaborar con los equipos de producto e ingeniería para integrar los agentes en los flujos de trabajo existentes sin afectar la aplicación principal.</li></ul>",
+        "benefits_headline": "Condiciones",
+        "benefits": "<div> Oportunidad de crecimiento con un equipo multinivel</div><div>Vacaciones y feriados</div><div>Flexibilidad y autonomía</div><div>Pago USD</div><div><strong>Trabajo remoto - Latam</strong></div>",
+        "desirable_headline": "Opcionales",
+        "desirable": "<ul><li>Experiencia con agentes de voz y llamadas, pipelines de STT/TTS en tiempo real e integración con telefonía.</li><li>Experiencia con agentes analíticos que trabajan con dashboards y datos empresariales estructurados.</li><li>Experiencia en herramientas de soporte al cliente, CRM u operaciones SaaS.</li></ul>",
+        "remote": true,
+        "remote_modality": "fully_remote",
+        "remote_zone": null,
+        "countries": [
+          "Remote"
+        ],
+        "lang": "en",
+        "category_name": "Machine Learning & AI",
+        "perks": [
+          "remote_full"
+        ],
+        "min_salary": 5000,
+        "max_salary": 6000,
+        "published_at": 1793742421,
+        "response_time_in_days": {
+          "min": null,
+          "max": null
+        },
+        "applications_count": 304,
+        "location_regions": {
+          "data": []
+        },
+        "location_tenants": {
+          "data": []
+        },
+        "location_cities": {
+          "data": []
+        },
+        "modality": {
+          "data": {
+            "id": "1",
+            "type": "modality",
+            "attributes": {
+              "name": "Full time",
+              "locale_key": "full_time"
+            }
+          }
+        },
+        "seniority": {
+          "data": {
+            "id": "4",
+            "type": "seniority",
+            "attributes": {
+              "name": "Senior",
+              "locale_key": "senior"
+            }
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "typescript",
+              "type": "tag",
+              "attributes": {
+                "name": "TypeScript",
+                "keywords": "Typesafe"
+              }
+            },
+            {
+              "id": "large-language-models",
+              "type": "tag",
+              "attributes": {
+                "name": "Large Language Models",
+                "keywords": "LLM, Large Language Model"
+              }
+            },
+            {
+              "id": "retrieval-augmented-generation",
+              "type": "tag",
+              "attributes": {
+                "name": "Retrieval-Augmented Generation",
+                "keywords": "RAG"
+              }
+            }
+          ]
+        },
+        "company": {
+          "data": {
+            "id": "interfell-corp",
+            "type": "company",
+            "attributes": {
+              "name": "Interfell",
+              "description": "Impulsamos el futuro de las empresas al conectarlos con profesionales calificados en LATAM🚀",
+              "long_description": "<div>En Interfell, conectamos empresas con el más destacado talento IT de LATAM. Impulsamos el futuro del mundo empresarial y creemos en el potencial del trabajo remoto. </div><div>Gestionamos el proceso completo de contratación y fidelización, abarcando servicios como Staffing y Recruiting. Nuestra pasión es potenciar la inclusión y el equilibrio vida-trabajo, creyendo firmemente que el talento latinoamericano es esencial para cualquier proyecto. </div><div>Únete a nosotros y transforma la manera de trabajar. <br>#TrabajoRemoto #SmartHiring</div>",
+              "projects": "<div>Interfell conecta empresas con el talento IT de LATAM, gestionando procesos de Staffing y Recruiting para impulsar el trabajo remoto y la transformación digital. Nuestro objetivo es potenciar la inclusión y el equilibrio vida-trabajo, brindando una experiencia de contratación integral y de alta calidad. Esta posición forma parte de un equipo enfocado en generar oportunidades de ventas y vínculos con potenciales clientes, contribuyendo al crecimiento de nuestras operaciones en la región.</div>",
+              "benefits": "<div>&nbsp;Oportunidad de crecimiento con un equipo multinivel</div><div>Vacaciones y feriados</div><div>Flexibilidad y autonomía</div><div>Pago USD</div><div><strong>Trabajo remoto - Latam</strong></div>",
+              "web": "https://interfell.com",
+              "twitter": "Interfell_com",
+              "github": "",
+              "facebook": "",
+              "angellist": "",
+              "country": "US",
+              "response_time_in_days": {
+                "min": 9,
+                "max": 21
+              },
+              "logo": "https://getonbrd-prod.s3.amazonaws.com/uploads/users/logo/7101/1.png"
+            }
+          }
+        }
+      },
+      "links": {
+        "public_url": "https://www.getonbrd.com/jobs/ai-engineer-interfell-remote"
+      }
+    },
+    {
+      "id": "founding-ai-engineer-sapling-remote",
+      "type": "job",
+      "attributes": {
+        "title": "Founding AI Engineer",
+        "description_headline": "What we’re looking for",
+        "description": "<p>Strong software engineering fundamentals and experience shipping production systems.</p><p>The ability to take an ambiguous problem and turn it into a practical, reliable product.</p><p>Experience building with LLMs, agents, or applied ML—or a strong engineering background and evidence that you can learn quickly.</p><p>Sound judgment about reliability, security, privacy, and when a workflow needs human oversight.</p><p>A willingness to work across the stack and stay close to users.</p><p>Clear communication, high standards, and a collaborative approach to solving problems.</p><p>Experience in healthcare, fintech, payments, developer infrastructure, or an early-stage startup is especially relevant. You don’t need to have worked in healthcare before.</p>",
+        "projects": "<h3><strong>About Sapling</strong></h3><p>Sapling is building an AI operating system for independent medical practices. We connect patient communication, clinical documentation, and care coordination into an autonomous healthcare team that helps practices keep patients informed, follow through on care plans, and coordinate care across providers.</p><p>Meaningful ownership: Help shape the product, architecture, and company while the team is still small.</p><p>An AI-native engineering culture: Use AI throughout how we build, while holding ourselves to high standards for product quality and reliability.</p><p>Build with people who care about their craft: Work with teammates who value trust, direct feedback, and helping each other do their best work, with sustainable hours.</p>",
+        "functions_headline": "What you’ll do",
+        "functions": "<p>Build and ship AI agents that support clinical documentation, patient follow-up, and care coordination across the patient journey.</p><p>Own projects end to end: understand the problem, design the system, ship it, and improve it based on customer feedback.</p><p>Build the infrastructure that makes agents dependable, including integrations, tool use, evaluations, monitoring, and human review.</p><p>Work directly with practices to turn complex care workflows into software that helps clinicians stay informed and patients get the care they need.</p><p>Shape our architecture, technical standards, and engineering team as we grow.</p>",
+        "benefits_headline": "Benefits",
+        "benefits": "<p>High compensation</p><p>Flexible vacation policies</p><p>Work schedule overlap with US PT time</p>",
+        "desirable_headline": "",
+        "desirable": "",
+        "remote": true,
+        "remote_modality": "fully_remote",
+        "remote_zone": null,
+        "countries": [
+          "Remote"
+        ],
+        "lang": "en",
+        "category_name": "Machine Learning & AI",
+        "perks": [
+          "remote_full",
+          "flexible_hours",
+          "computer_provided",
+          "informal_dresscode",
+          "vacation_over_legal"
+        ],
+        "min_salary": 4500,
+        "max_salary": 7000,
+        "published_at": 1793465080,
+        "response_time_in_days": {
+          "min": null,
+          "max": null
+        },
+        "applications_count": 407,
+        "location_regions": {
+          "data": []
+        },
+        "location_tenants": {
+          "data": []
+        },
+        "location_cities": {
+          "data": []
+        },
+        "modality": {
+          "data": {
+            "id": "1",
+            "type": "modality",
+            "attributes": {
+              "name": "Full time",
+              "locale_key": "full_time"
+            }
+          }
+        },
+        "seniority": {
+          "data": {
+            "id": "4",
+            "type": "seniority",
+            "attributes": {
+              "name": "Senior",
+              "locale_key": "senior"
+            }
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "software-engineering",
+              "type": "tag",
+              "attributes": {
+                "name": "Software Engineering",
+                "keywords": "Software Engineering Hiring, Software Engineering Roles, Software Engineering Tools"
+              }
+            },
+            {
+              "id": "large-language-models",
+              "type": "tag",
+              "attributes": {
+                "name": "Large Language Models",
+                "keywords": "LLM, Large Language Model"
+              }
+            },
+            {
+              "id": "ai-agents",
+              "type": "tag",
+              "attributes": {
+                "name": "AI Agents",
+                "keywords": null
+              }
+            },
+            {
+              "id": "system-design",
+              "type": "tag",
+              "attributes": {
+                "name": "System Design",
+                "keywords": "Structural Patterns, System Refactoring, System Reengineering, Sustainable Design Patterns, System Design Patterns, System Modeling"
+              }
+            },
+            {
+              "id": "evaluation",
+              "type": "tag",
+              "attributes": {
+                "name": "Evaluation",
+                "keywords": "Evaluation Coding, Evaluation Design, Evaluation Analysis, Evaluation Metrics, Evaluation Testing, Evaluation Methods, Evaluation Processes, Evaluation Tools"
+              }
+            },
+            {
+              "id": "monitoring",
+              "type": "tag",
+              "attributes": {
+                "name": "Monitoring",
+                "keywords": "Monitoring APM, Monitoring Alarms, Monitor, Monitoring Applications, Monitoring Automation, Monitoring Platforms, Monitoring KPIs, Monitoring Policies, Monitoring Practices, Monitoring Services, Monitor Tools, Monitoring Toolsets, Monitoring Tools"
+              }
+            }
+          ]
+        },
+        "company": {
+          "data": {
+            "id": "sapling",
+            "type": "company",
+            "attributes": {
+              "name": "Sapling",
+              "description": "Learn more at saplinghealth.com",
+              "long_description": "",
+              "projects": null,
+              "benefits": "<p>High compensation</p><p>Flexible vacation policies</p><p>Work schedule overlap with US PT time</p>",
+              "web": "https://saplinghealth.com",
+              "twitter": null,
+              "github": null,
+              "facebook": null,
+              "angellist": null,
+              "country": "US",
+              "response_time_in_days": {
+                "min": null,
+                "max": null
+              },
+              "logo": "https://getonbrd-prod.s3.amazonaws.com/uploads/users/logo/20961/sapling-logo-square.png"
+            }
+          }
+        }
+      },
+      "links": {
+        "public_url": "https://www.getonbrd.com/jobs/founding-ai-engineer-sapling-remote"
+      }
+    },
+    {
+      "id": "staff-data-scientist-machine-learning-engineer-andersen-lab-remote",
+      "type": "job",
+      "attributes": {
+        "title": "Staff Data Scientist / Machine Learning Engineer",
+        "description_headline": "Qualifications and requirements",
+        "description": "<p>- Hands-on experience in Machine Learning Engineering using Python, including developing, deploying, and maintaining production-grade ML models, for 5+ years. </p><p>- Proven experience with gradient boosting algorithms (XGBoost, CatBoost, or LightGBM), including hyperparameter tuning, feature importance analysis, and advanced model evaluation. </p><p>- Strong proficiency in SQL and BigQuery, including complex feature engineering queries, scheduled data transformations, and data validation. </p><p>- Hands-on experience deploying and maintaining ML workloads on Google Cloud Platform (GCP), including Cloud Run, Airflow/Composer, Vertex AI, and Pub/Sub. </p><p>- Solid understanding of model calibration, business-oriented loss functions, and the impact of prediction errors on downstream optimization systems. </p><p>- Practical experience integrating ML model outputs with external systems through APIs, such as advertising platforms, recommendation engines, pricing systems, or bidding systems. Strongly preferred: </p><p>- Experience in e-commerce or Direct-to-Consumer (DTC) environments, particularly customer lifetime value (LTV) prediction, purchase forecasting, churn modeling, or customer segmentation. </p><p>- Familiarity with probabilistic customer models (BG/NBD, Gamma-Gamma, or similar frameworks) or strong foundations in Bayesian statistics. </p><p>- Experience with advertising platform integrations, including Google Ads API (ConversionUploadService, Enhanced Conversions), Meta Conversions API (CAPI), or similar server-side event tracking systems. </p><p>- Knowledge of identity resolution and entity matching techniques, including graph-based identity stitching, probabilistic matching, or cross-device identity resolution. </p><p>- Level of English – from Upper-Intermediate and above.</p>",
+        "projects": "<p>Andersen is hiring a <strong>Staff Data Scientist / Machine Learning Engineer</strong> for a project developing an AI-powered advertising platform to predict customer lifetime value and optimize campaign performance. </p><p><strong>The customer</strong> is a technology company that develops software solutions to help businesses improve operational efficiency and make data-driven decisions. The company leverages modern technologies, including artificial intelligence and data analytics, to optimize business processes, enhance performance, and support sustainable business growth. </p><p><strong>The project</strong> is focused on developing and enhancing an AI-powered advertising optimization platform that predicts customer lifetime value using machine learning models. It integrates predictive value signals with major advertising platforms to improve value-based bidding, optimize marketing budgets, and maximize campaign performance through accurate data calibration and automated signal delivery.</p>",
+        "functions_headline": "Job functions",
+        "functions": "<p>- Building and maintaining predictive Lifetime Value (pLTV) models using XGBoost, CatBoost, and BG/NBD within a tiered scoring architecture, routing users into appropriate model tiers based on data availability and observability rather than applying a one-size-fits-all regression approach. </p><p>- Designing, implementing, and maintaining model calibration layers to transform raw predictions into platform-ready values, incorporating haircut scalars, linear, logarithmic, and rank-based normalization, and asymmetric loss functions that penalize overestimating low-value customers more heavily than underestimating high-value customers. </p><p>- Owning feature engineering processes in BigQuery, developing and maintaining Gold-layer feature tables from cleaned Silver-layer data, including RFM metrics, behavioral embeddings, category affinity, and purchase velocity. </p><p>- Ensuring feature quality and reliability by evaluating data completeness, monitoring missing-value rates, and excluding features with high missing rates among new users rather than relying on imputation. </p><p>- Monitoring model drift and distribution shifts, implementing residual logging, comparing pre- and post-signal deployment cohorts, and identifying causal contamination in retraining datasets resulting from the model's influence on user acquisition. </p><p>- Maintaining and improving batch Union-Find identity resolution algorithms in BigQuery, connecting GA4 behavioral identifiers with Shopify transactional identifiers and optimizing identity match rates to improve signal quality. </p><p>- Developing and maintaining production-grade Python applications running on Google Cloud Run Jobs, orchestrating workflows through Apache Airflow, and ensuring reliable delivery of ML-generated signals to advertising platforms. </p><p>- Implementing and maintaining automated testing, CI/CD pipelines, idempotent processing, and dry-run safety mechanisms to ensure production stability, prevent costly errors, and protect client advertising performance.</p>",
+        "benefits_headline": "Conditions",
+        "benefits": "<p>- Experience collaborating with leaders in FinTech, Healthcare, Retail, and Telecom, including companies like Samsung, Siemens, and Johnson &amp; Johnson.<br>- Opportunities to switch projects and develop expertise in various business domains.<br>- Flexible work conditions: fully remote, office-based, or hybrid options available.<br>- Professional, financial, and career growth guaranteed, with mentoring and adaptation systems for new employees.<br>- Potential to earn an additional $1,000 per month through company activities, included in the annual bonus.<br>- Access to a constantly updated corporate training portal with a comprehensive knowledge base.<br>- Engaging corporate culture with events like parties, game days, and snacks.<br>- Compensation for certifications (AWS, PMP, etc.).<br>- Referral program.<br>- Private health insurance and sports activity compensation.</p><p>Join us! </p><p>Your personal data is protected in accordance with GDPR regulations. Learn more:<a href=\"https://andersenlab.com/privacy-policy\"> https://andersenlab.com/privacy-policy<br></a></p>",
+        "desirable_headline": "Desirable skills",
+        "desirable": "<p>- Experience with Terraform, CI/CD pipeline design, and Docker containerization for ML workloads. </p><p>- Knowledge of causal inference methods, A/B testing in advertising environments, or multi-armed bandit optimization. </p><p>- Familiarity with AI-assisted development tools and agentic coding workflows, such as Claude Code, Cursor, or similar solutions. </p>",
+        "remote": true,
+        "remote_modality": "remote_local",
+        "remote_zone": null,
+        "countries": [
+          "Remote"
+        ],
+        "lang": "en",
+        "category_name": "Machine Learning & AI",
+        "perks": [],
+        "min_salary": 4500,
+        "max_salary": 5000,
+        "published_at": 1794487106,
+        "response_time_in_days": {
+          "min": null,
+          "max": null
+        },
+        "applications_count": 7,
+        "location_regions": {
+          "data": []
+        },
+        "location_tenants": {
+          "data": [
+            {
+              "id": 7,
+              "type": "location_tenant"
+            }
+          ]
+        },
+        "location_cities": {
+          "data": []
+        },
+        "modality": {
+          "data": {
+            "id": "1",
+            "type": "modality",
+            "attributes": {
+              "name": "Full time",
+              "locale_key": "full_time"
+            }
+          }
+        },
+        "seniority": {
+          "data": {
+            "id": "4",
+            "type": "seniority",
+            "attributes": {
+              "name": "Senior",
+              "locale_key": "senior"
+            }
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "python",
+              "type": "tag",
+              "attributes": {
+                "name": "Python",
+                "keywords": "Django, Jython, Cheetah, Flask, Jinja2, bottle, itty, NumPy, SciPy, phyton, pyton, Pytohn, Python 2.7, Python 2, Python 3.10, Python 3, Pyhton, Python Automation, Python Script, Python Programming, Python Scripting, Python Testing"
+              }
+            },
+            {
+              "id": "machine-learning",
+              "type": "tag",
+              "attributes": {
+                "name": "Machine Learning",
+                "keywords": "Tensorflow, Element AI, Caffe, Torch, H20, aprendizaje automático, NLP, NLU, Scikit-learn, ML, Machine Learning Algorithms, Machine Learning Concepts, Machine Learning Integration, Machine Learning Models"
+              }
+            },
+            {
+              "id": "sql",
+              "type": "tag",
+              "attributes": {
+                "name": "SQL",
+                "keywords": "PL SQL, SQLServer, SQL server, SPSQL, SP SQL, SQL Coding, SQL DB2, SQL Oracle, SQL RDMS, SQL400"
+              }
+            },
+            {
+              "id": "bigquery",
+              "type": "tag",
+              "attributes": {
+                "name": "BigQuery",
+                "keywords": "Big Query, Google BigQuery"
+              }
+            },
+            {
+              "id": "cloud-gcp",
+              "type": "tag",
+              "attributes": {
+                "name": "Google Cloud Platform",
+                "keywords": "GCP, Google Cloud, GCloud, gcloud CLI, GCP Console, GAE, Google Compute Engine, Google BigQuery, Google Cloud Composer, Google Cloud Computing, Cloud GCP, Cloud (GCP)"
+              }
+            },
+            {
+              "id": "api-integration",
+              "type": "tag",
+              "attributes": {
+                "name": "API Integration",
+                "keywords": ""
+              }
+            },
+            {
+              "id": "feature-engineering",
+              "type": "tag",
+              "attributes": {
+                "name": "Feature Engineering",
+                "keywords": null
+              }
+            },
+            {
+              "id": "identity-resolution",
+              "type": "tag",
+              "attributes": {
+                "name": "Identity Resolution",
+                "keywords": null
+              }
+            }
+          ]
+        },
+        "company": {
+          "data": {
+            "id": "andersen-lab",
+            "type": "company",
+            "attributes": {
+              "name": "Andersen Lab",
+              "description": "Welcome to Andersen Lab, a software development company specializing in custom web and mobile solutions. We create effective digital products using innovative technologies like Big Data, AI, Machine Learning, and more.",
+              "long_description": "<p>Since our foundation, Andersen Inc. has developed deep expertise in delivering enterprise-level solutions across industries including Healthcare, FinTech, Logistics, Automotive, E-commerce, and IoT.</p><p>We are trusted by large enterprises and SMEs alike, with a focus on quality and meeting our clients' business needs. Our partnerships with major brands such as Siemens, S&amp;P Global, Ryanair, and Johnson &amp; Johnson highlight our commitment to excellence.</p><p>With a strong team of industry experts across multiple development centers, we’ve successfully delivered a wide range of projects, ensuring high ROI and competitive software solutions. Let us help you achieve the best possible outcomes for your business.</p>",
+              "projects": null,
+              "benefits": "<p>- Experience collaborating with leaders in FinTech, Healthcare, Retail, and Telecom, including companies like Samsung, Siemens, and Johnson &amp; Johnson.<br>- Opportunities to switch projects and develop expertise in various business domains.<br>- Flexible work conditions: fully remote, office-based, or hybrid options available.<br>- Professional, financial, and career growth guaranteed, with mentoring and adaptation systems for new employees.<br>- Potential to earn an additional $1,000 per month through company activities, included in the annual bonus.<br>- Access to a constantly updated corporate training portal with a comprehensive knowledge base.<br>- Engaging corporate culture with events like parties, game days, and snacks.<br>- Compensation for certifications (AWS, PMP, etc.).<br>- Referral program.<br>- Private health insurance and sports activity compensation.<br><br>Join us!&nbsp;<br><br></p><p>Your personal data is protected in accordance with GDPR regulations. Learn more:<a href=\"https://andersenlab.com/privacy-policy\"> https://andersenlab.com/privacy-policy<br></a><br></p>",
+              "web": "https://andersenlab.com/",
+              "twitter": "",
+              "github": "",
+              "facebook": "",
+              "angellist": null,
+              "country": "US",
+              "response_time_in_days": {
+                "min": null,
+                "max": null
+              },
+              "logo": "https://getonbrd-prod.s3.amazonaws.com/uploads/users/logo/19717/andersen_softwaredev_logo.jpeg"
+            }
+          }
+        }
+      },
+      "links": {
+        "public_url": "https://www.getonbrd.com/jobs/staff-data-scientist-machine-learning-engineer-andersen-lab-remote"
+      }
+    },
+    {
+      "id": "senior-ai-full-stack-engineer-common-forge-ventures-remote",
+      "type": "job",
+      "attributes": {
+        "title": "Senior AI / Full-Stack Engineer",
+        "description_headline": "Core requirements",
+        "description": "<ul><li>Background in B2B SaaS or product-led companies.</li><li>5+ years of full-stack development experience, with strong fluency in either TypeScript/Node or Python (ideally both) and a modern frontend framework (React, Next.js, or Angular).</li><li>Hands-on agent work: tool or function calling, multi-step orchestration, retrieval, structured output, evals, guardrails, and managing cost and latency.</li><li>Production-level use of AI coding tools (Claude Code, Cursor, Copilot, etc.). You have shipped LLM features to paying B2B customers.</li><li>Hands-on experience with CI/CD, containerization (Docker), and at least one major cloud (GCP, AWS, or Azure). Solid grasp of DevOps fundamentals: IaC, monitoring, logging, alerting.</li><li>Comfortable working in a fast-moving environment where priorities shift and you're expected to own outcomes.</li><li>Very strong written English (C1 or C2). We write things down.</li><li>You work well as a peer on a team of senior engineers: you review their code, and they review yours.</li></ul>",
+        "projects": "<p>Common Forge has been developing custom software for over 20 years. Today, we are on a mission to support construction &amp; trade companies by leveraging advanced technologies to enhance their project planning and talent development processes.</p><p>We are hiring a senior engineer who ships product features end-to-end and brings genuine fluency with AI development tooling. The majority of your time will be building the features users see, while you will also spend time making our engineering team faster, more reliable, and more leveraged through AI-augmented workflows. If you have built with Claude Code, Cursor, Codex, etc. and can point to concrete output that proves it, let's talk.</p><p>We are looking for a team member who has shipped LLM-based agents to customers in a B2B SaaS product. You code with AI assistants every day and know what a modern CI/CD pipeline looks like. Construction experience is a plus. This is not an ML research or model-training role.</p>",
+        "functions_headline": "What you'll do",
+        "functions": "<ul><li>Own features end to end: the React and Next.js front end, the TypeScript APIs, Postgres, and the deploy. Must have strong PR hygiene.</li><li>Design, build and ship LLM agents and features in our product: tool calling over our APIs and data, multi-step workflows, retrieval and structured output.</li><li>Build the evals, guardrails and logging that prove those features work, and keep the cost and latency of each model call in check.</li><li>Turn vague problems from contractors (project managers, superintendents, foremen) into scoped features and talk to those users when it helps.</li><li>Ship small, frequent releases through CI/CD: automated tests, a staging environment, container deploys on Google Cloud.</li><li>Translate requirements into clean, tested, maintainable code with strong PR hygiene.</li><li>Use AI coding assistants every day and share the workflows with the team.</li><li>Work directly with product, other engineers, and occasionally customers. Bridge feature work and infra reliability. Review code thoughtfully and mentor where it helps.</li></ul>",
+        "benefits_headline": "Compensation and benefits",
+        "benefits": "<ul><li><strong>Health:</strong> $150/month health and wellness stipend.</li><li><strong>Engagement:</strong> B2B contract. 30-day mutual notice.</li><li><strong>Fully remote.</strong> We are based in Denver, Colorado (MT, UTC-7). There must be significant overlap with US business hours.</li><li><strong>Async-first.</strong> Docs, Loom, and well-written PRs are the norm. Meetings happen when they're the fastest path to clarity.</li><li><strong>Small team, direct access.</strong> No middle layer between you and the people making decisions. Your work ships fast.</li><li><strong>Latest tooling.</strong> We use the best AI tools available and expect you to do the same.</li></ul>",
+        "desirable_headline": "Nice to have",
+        "desirable": "<ul><li>Prior startup experience where you were the only owner of an area.</li><li>A background in construction, the trades or field services.</li><li>Google Cloud, especially Cloud Run.</li><li>Multi-tenant SaaS.</li><li>Terraform and GitHub Actions.</li><li>Public work that shows how you build with AI: open source, write-ups or talks.</li></ul>",
+        "remote": true,
+        "remote_modality": "remote_local",
+        "remote_zone": null,
+        "countries": [
+          "Remote"
+        ],
+        "lang": "en",
+        "category_name": "Machine Learning & AI",
+        "perks": [
+          "flexible_hours"
+        ],
+        "min_salary": 3000,
+        "max_salary": 5000,
+        "published_at": 1794295583,
+        "response_time_in_days": {
+          "min": null,
+          "max": null
+        },
+        "applications_count": 94,
+        "location_regions": {
+          "data": [
+            {
+              "id": 9,
+              "type": "location_region"
+            },
+            {
+              "id": 6,
+              "type": "location_region"
+            }
+          ]
+        },
+        "location_tenants": {
+          "data": []
+        },
+        "location_cities": {
+          "data": []
+        },
+        "modality": {
+          "data": {
+            "id": "1",
+            "type": "modality",
+            "attributes": {
+              "name": "Full time",
+              "locale_key": "full_time"
+            }
+          }
+        },
+        "seniority": {
+          "data": {
+            "id": "4",
+            "type": "seniority",
+            "attributes": {
+              "name": "Senior",
+              "locale_key": "senior"
+            }
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "typescript",
+              "type": "tag",
+              "attributes": {
+                "name": "TypeScript",
+                "keywords": "Typesafe"
+              }
+            },
+            {
+              "id": "react",
+              "type": "tag",
+              "attributes": {
+                "name": "React",
+                "keywords": "ReactJS, React-Native, GatsbyJS, react.js, React JS, React.ts, React Web, React 18, React ES6, React Community, React Programming, React.js"
+              }
+            },
+            {
+              "id": "next-js",
+              "type": "tag",
+              "attributes": {
+                "name": "Next.js",
+                "keywords": "Next JS, NextJS, Next.js 13, Next.js Frontend, Next"
+              }
+            },
+            {
+              "id": "ci-cd",
+              "type": "tag",
+              "attributes": {
+                "name": "CI/CD",
+                "keywords": "CI/CD, CD/CI, CDCI, CICD, DevOps, Continuous Delivery, Continuous Integration, CI, CI/CD Tools"
+              }
+            },
+            {
+              "id": "docker",
+              "type": "tag",
+              "attributes": {
+                "name": "Docker",
+                "keywords": "Docker CE, Docker Engine, Dockers, Docker Containers, Dockerfile Development, DockerHub, Docker Hub, Docker Registries, Docker Registry, Docker Clusters, Docker-compose, Docker Compose, Docker Swarm"
+              }
+            },
+            {
+              "id": "ai-coding-tools",
+              "type": "tag",
+              "attributes": {
+                "name": "AI Coding Tools",
+                "keywords": null
+              }
+            },
+            {
+              "id": "retrieval-augmented-generation",
+              "type": "tag",
+              "attributes": {
+                "name": "Retrieval-Augmented Generation",
+                "keywords": "RAG"
+              }
+            },
+            {
+              "id": "cloud-infrastructure",
+              "type": "tag",
+              "attributes": {
+                "name": "Cloud Infrastructure",
+                "keywords": null
+              }
+            }
+          ]
+        },
+        "company": {
+          "data": {
+            "id": "common-forge-ventures",
+            "type": "company",
+            "attributes": {
+              "name": "Common Forge Ventures",
+              "description": "At Common Forge, we’re not just developers; we’re builders committed to creating solutions for real problems. ",
+              "long_description": "",
+              "projects": "<p>Common Forge Ventures is seeking a Senior Data Engineer to join one of our venture studio startups, a high-growth company building the world’s most robust, contextualized buyer intelligence platform for investment banks, private equity, and strategic acquirers. You will own and evolve the data infrastructure that ingests, cleanses, and enriches large-scale data from APIs, web scraping agents, LLM outputs, and internal datasets. This role focuses on scalable pipelines, data governance, AI agent orchestration, and seamless integration with product teams to deliver reliable data APIs and feeds that power advanced buyer insights.</p>",
+              "benefits": "<p>At Common Forge, you will enjoy a remote working environment with flexible hours, allowing you to balance personal and professional commitments effectively. We prioritize opportunities for professional development and growth, fostering an inclusive and collaborative team culture. Join us to access the latest technologies and tools as we work towards impactful solutions together! 🚀</p>",
+              "web": "https://commonforge.co",
+              "twitter": "",
+              "github": "",
+              "facebook": "",
+              "angellist": null,
+              "country": "US",
+              "response_time_in_days": {
+                "min": 0,
+                "max": 6
+              },
+              "logo": "https://getonbrd-prod.s3.amazonaws.com/uploads/users/logo/16285/CFV_Icon_Orange_2x(2).png"
+            }
+          }
+        }
+      },
+      "links": {
+        "public_url": "https://www.getonbrd.com/jobs/senior-ai-full-stack-engineer-common-forge-ventures-remote"
+      }
+    },
+    {
+      "id": "ingeniero-llm-rag-agentes-solox-santiago",
+      "type": "job",
+      "attributes": {
+        "title": "Ingeniero LLM / RAG / Agentes",
+        "description_headline": "Requerimientos del cargo",
+        "description": "<ul><li>3 o más años en ML o ingeniería de software, con proyectos de LLM, RAG o agentes en producción.</li><li>Python sólido y experiencia con bases vectoriales y búsqueda híbrida.</li><li>Experiencia evaluando sistemas con LLM, más allá de probar a mano.</li></ul>",
+        "projects": "<p>Estamos conformando un equipo que con el uso de IA, agentes y machine learning, nos permita generar valor a diferentes etapas del negocio minero.</p><p>Ejemplo: optimizacion de procesos, reportabilidad automatica, planificacion de procesos y resecuenciamiento de actividades utilizando agentes, etc.</p><p>Tenemos multiples clientes mineros ubicados en Chile, con la decision tomada de avanzar en soluciones IA.</p><p>Los proyectos requieren viajes esporadicos a faenas mineras. El trabajo del dia a dia requiere participacion en reuniones con clientes y desarrollar soluciones basadas en agentes.</p><p>Nuestra vision es ser una startup que aporte valor a sus clientes mineros, apoyando su transformacion digital hacia el uso de la data de manera efectiva e inteligente para su toma de decisiones estrategicas y operacionales</p>",
+        "functions_headline": "Funciones del cargo",
+        "functions": "<ul><li>Diseñar y construir el agente: RAG sobre documentos y datos de areas operacionales en la mina, uso de herramientas y flujos con validación humana.</li><li>Hacer que las respuestas citen sus fuentes y se abstengan cuando no hay evidencia.</li><li>Montar la evaluación del agente: conjuntos de prueba, métricas de calidad y detección de regresiones.</li><li>Registrar trazas y decisiones para auditoría.</li><li>Elegir y comparar modelos (APIs comerciales y modelos abiertos) según costo, calidad y confidencialidad.</li><li>Trabajar con el ingeniero expertos en el proceso minero para que las reglas y diagnósticos sean técnicamente correctos.</li></ul>",
+        "benefits_headline": "Condiciones",
+        "benefits": "<p>Somos una start up en desarrollo, con alto potencial de crecimiento. Tenemos flexibilidad para desarrollar trabajo de manera remota. </p>",
+        "desirable_headline": "Opcionales",
+        "desirable": "<ul><li>Observabilidad de aplicaciones con LLM y control de costos de inferencia.</li><li>Datos industriales, mantenimiento o minería.</li><li>Modelos abiertos y despliegue en entornos con restricciones de confidencialidad.</li></ul>",
+        "remote": false,
+        "remote_modality": "hybrid",
+        "remote_zone": null,
+        "countries": [
+          "Chile"
+        ],
+        "lang": "lang_not_specified",
+        "category_name": "Machine Learning & AI",
+        "perks": [
+          "flexible_hours",
+          "remote_partial",
+          "informal_dresscode"
+        ],
+        "min_salary": 2700,
+        "max_salary": 3200,
+        "published_at": 1794484966,
+        "response_time_in_days": {
+          "min": null,
+          "max": null
+        },
+        "applications_count": 33,
+        "location_regions": {
+          "data": []
+        },
+        "location_tenants": {
+          "data": []
+        },
+        "location_cities": {
+          "data": [
+            {
+              "id": 1,
+              "type": "location_city"
+            }
+          ]
+        },
+        "modality": {
+          "data": {
+            "id": "1",
+            "type": "modality",
+            "attributes": {
+              "name": "Full time",
+              "locale_key": "full_time"
+            }
+          }
+        },
+        "seniority": {
+          "data": {
+            "id": "3",
+            "type": "seniority",
+            "attributes": {
+              "name": "Semi Senior",
+              "locale_key": "semi_senior"
+            }
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "python",
+              "type": "tag",
+              "attributes": {
+                "name": "Python",
+                "keywords": "Django, Jython, Cheetah, Flask, Jinja2, bottle, itty, NumPy, SciPy, phyton, pyton, Pytohn, Python 2.7, Python 2, Python 3.10, Python 3, Pyhton, Python Automation, Python Script, Python Programming, Python Scripting, Python Testing"
+              }
+            },
+            {
+              "id": "large-language-models",
+              "type": "tag",
+              "attributes": {
+                "name": "Large Language Models",
+                "keywords": "LLM, Large Language Model"
+              }
+            },
+            {
+              "id": "retrieval-augmented-generation",
+              "type": "tag",
+              "attributes": {
+                "name": "Retrieval-Augmented Generation",
+                "keywords": "RAG"
+              }
+            },
+            {
+              "id": "ai-agents",
+              "type": "tag",
+              "attributes": {
+                "name": "AI Agents",
+                "keywords": null
+              }
+            },
+            {
+              "id": "vector-databases",
+              "type": "tag",
+              "attributes": {
+                "name": "Vector Databases",
+                "keywords": null
+              }
+            },
+            {
+              "id": "machine-learning",
+              "type": "tag",
+              "attributes": {
+                "name": "Machine Learning",
+                "keywords": "Tensorflow, Element AI, Caffe, Torch, H20, aprendizaje automático, NLP, NLU, Scikit-learn, ML, Machine Learning Algorithms, Machine Learning Concepts, Machine Learning Integration, Machine Learning Models"
+              }
+            }
+          ]
+        },
+        "company": {
+          "data": {
+            "id": "solox",
+            "type": "company",
+            "attributes": {
+              "name": "Solox",
+              "description": "Desarrollamos soluciones digitales para la industria minera",
+              "long_description": "",
+              "projects": null,
+              "benefits": "<p>Somos una start up en desarrollo, con alto potencial de crecimiento. Tenemos flexibilidad para desarrollar trabajo de manera remota.  </p>",
+              "web": "http://www.soloxspace.com",
+              "twitter": null,
+              "github": null,
+              "facebook": null,
+              "angellist": null,
+              "country": "CL",
+              "response_time_in_days": {
+                "min": null,
+                "max": null
+              },
+              "logo": "https://getonbrd-prod.s3.amazonaws.com/uploads/users/logo/21145/logo_solox_space_200x200.png"
+            }
+          }
+        }
+      },
+      "links": {
+        "public_url": "https://www.getonbrd.com/jobs/ingeniero-llm-rag-agentes-solox-santiago"
+      }
+    },
+    {
+      "id": "computer-vision-con-deep-learning-concepcion-diurno-duoc-uc-concepcion",
+      "type": "job",
+      "attributes": {
+        "title": "Computer Vision con Deep Learning Concepción Diurno",
+        "description_headline": "Requerimientos del cargo",
+        "description": "<ul><li>Formación: Ingeniero (a)en Informática Ingeniero(a) en computación Ingeniero(a) eléctrico(a) Fí sico(a) Matemático(a) Cientista de Datos </li><li>Experiencia: Mínimo 5 años de experiencia en Ingeniería de Datos, Ciencia de Datos, Deep Learning, Machine Learning Experiencia específica: Al menos 5 años de experiencia en diseño, implementación , investigación de arquitecturas de sistemas de Deep Learning y gestión de proyectos relacionados con la IA, en particular en proyectos de Visión por computadora con técnicas de Deep Learning </li><li>Disponibilidad: Jornada diurna= Lunes 10:40 a 12:10 y Viernes de 13:41 a 15:50</li><li>Otros Requisitos: Deseable Magíster en Machine Learning o Deep Learning o Doctorado(PhD) en áreas relacionadas con la inteligencia artificial o la arquitectura de sistemas. </li></ul>",
+        "projects": "<p>Duoc UC es una institución de educación superior técnico profesional autónoma y católica, con más de 50 años de historia y la máxima acreditación institucional. Nos enfocamos en formar técnicos y profesionales a través de 9 escuelas y más de 70 carreras vigentes, presentes en 18 sedes regionales. Nuestro equipo docente colabora en entornos multidisciplinarios y con enfoque en valores institucionales, buscando aportar al desarrollo económico de Chile mediante una educación de calidad y actualizada.</p>",
+        "functions_headline": "Funciones del cargo",
+        "functions": "<p>Duoc UC Sede Concepción, Escuela de Informática y Telecomunicaciones requiere contratar docente para la asignatura de Computer Visioncon Mschine Learning con disponibilidad en jornada diurna que será responsable de liderar el proceso de enseñanza y aprendizaje de acuerdo con el modelo educativo, alineado al marco valórico institucional, movilizando su formación y experiencia profesional, valores y conocimiento disciplinar, para ser un real aporte al aprendizaje de los estudiantes. </p>",
+        "benefits_headline": "Condiciones",
+        "benefits": "<p>La institución ofrece un entorno educativo con trayectoria, enfoque en valores institucionales y desarrollo profesional. Jornada diurna en la sede San Carlos de Apoquindo, posibilidad de integrarse a equipos multicisciplinarios, y apoyo para desarrollo docente y actualización tecnológica. Otras condiciones y beneficios serán detallados en la etapa de contratación y contrato, conforme a las políticas de Duoc UC.</p>",
+        "desirable_headline": "Opcionales",
+        "desirable": "",
+        "remote": false,
+        "remote_modality": "no_remote",
+        "remote_zone": null,
+        "countries": [
+          "Chile"
+        ],
+        "lang": "lang_not_specified",
+        "category_name": "Machine Learning & AI",
+        "perks": [],
+        "min_salary": null,
+        "max_salary": null,
+        "published_at": 1794510840,
+        "response_time_in_days": {
+          "min": null,
+          "max": null
+        },
+        "applications_count": 3,
+        "location_regions": {
+          "data": []
+        },
+        "location_tenants": {
+          "data": []
+        },
+        "location_cities": {
+          "data": [
+            {
+              "id": 2,
+              "type": "location_city"
+            }
+          ]
+        },
+        "modality": {
+          "data": {
+            "id": "1",
+            "type": "modality",
+            "attributes": {
+              "name": "Full time",
+              "locale_key": "full_time"
+            }
+          }
+        },
+        "seniority": {
+          "data": {
+            "id": "4",
+            "type": "seniority",
+            "attributes": {
+              "name": "Senior",
+              "locale_key": "senior"
+            }
+          }
+        },
+        "tags": {
+          "data": [
+            {
+              "id": "computer-vision",
+              "type": "tag",
+              "attributes": {
+                "name": "Computer vision",
+                "keywords": "Visión por computador, visión de computador, visión por computadora, Computer Graphics"
+              }
+            },
+            {
+              "id": "deep-learning",
+              "type": "tag",
+              "attributes": {
+                "name": "Deep Learning",
+                "keywords": "Neural Network, Redes Neuronales, Scklearn, DeepLearning, Deep Learning Frameworks"
+              }
+            },
+            {
+              "id": "machine-learning",
+              "type": "tag",
+              "attributes": {
+                "name": "Machine Learning",
+                "keywords": "Tensorflow, Element AI, Caffe, Torch, H20, aprendizaje automático, NLP, NLU, Scikit-learn, ML, Machine Learning Algorithms, Machine Learning Concepts, Machine Learning Integration, Machine Learning Models"
+              }
+            },
+            {
+              "id": "data-engineering",
+              "type": "tag",
+              "attributes": {
+                "name": "Data Engineering",
+                "keywords": "Data Engineering Tools"
+              }
+            },
+            {
+              "id": "data-science",
+              "type": "tag",
+              "attributes": {
+                "name": "Data Science",
+                "keywords": "NumPy, SciPy, gobierno de datos, regresión, regression, data scientist, cientista de datos, científico de datos, Data Science Tools, Data Science Collaboration, Data Science Infrastructure, Data Science Libraries"
+              }
+            }
+          ]
+        },
+        "company": {
+          "data": {
+            "id": "duoc-uc-cl",
+            "type": "company",
+            "attributes": {
+              "name": "Duoc UC",
+              "description": "Ser colaborador en Duoc UC es mucho más que trabajar en educación. Es trabajar en una institución de educación superior técnico profesional autónoma y católica, con más de 50 años de historia, con la máxima acreditación otorgada por la CNA.",
+              "long_description": "<p>Con más de 50 años de historia y la máxima acreditación institucional, por siete años, todos quienes forman parte de Duoc UC pueden decir orgullosamente que miles de técnicos y profesionales, que hoy aportan al desarrollo económico de Chile, se han formado en una de las <strong>9 escuelas y más de 70 carreras vigentes, presentes en sus 18 sedes</strong> de la Región Metropolitana, Valparaíso, Biobío, La Araucanía y Los Lagos.</p>",
+              "projects": "<p>Duoc UC es una institución de educación superior técnico profesional autónoma y católica, con más de 50 años de historia y la máxima acreditación institucional. Nos enfocamos en formar técnicos y profesionales a través de 9 escuelas y más de 70 carreras vigentes, presentes en 18 sedes regionales. Nuestro equipo docente colabora en entornos multidisciplinarios y con enfoque en valores institucionales, buscando aportar al desarrollo económico de Chile mediante una educación de calidad y actualizada.</p>",
+              "benefits": "<p>La institución ofrece un entorno educativo con trayectoria, enfoque en valores institucionales y desarrollo profesional. Jornada diurna en la sede San Carlos de Apoquindo, posibilidad de integrarse a equipos multicisciplinarios, y apoyo para desarrollo docente y actualización tecnológica. Otras condiciones y beneficios serán detallados en la etapa de contratación y contrato, conforme a las políticas de Duoc UC.</p>",
+              "web": "https://www.duoc.cl/",
+              "twitter": "",
+              "github": "",
+              "facebook": "",
+              "angellist": "",
+              "country": "CL",
+              "response_time_in_days": {
+                "min": 8,
+                "max": 16
+              },
+              "logo": "https://getonbrd-prod.s3.amazonaws.com/uploads/users/logo/14716/descarga.png"
+            }
+          }
+        }
+      },
+      "links": {
+        "public_url": "https://www.getonbrd.com/jobs/computer-vision-con-deep-learning-concepcion-diurno-duoc-uc-concepcion"
+      }
+    }
+  ],
+  "meta": {
+    "page": 1,
+    "per_page": 100,
+    "total_pages": 1
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "active": false,
+  "connections": {
+    "Cada hora": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Clasificar por reglas",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Candidatas sin avisar": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Formatear avisos",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Clasificar por reglas": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Candidatas sin avisar",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Ejecutar a mano": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Clasificar por reglas",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Enviar a Telegram": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Marcar avisadas",
+            "type": "main"
+          }
+        ]
+      ]
+    },
+    "Formatear avisos": {
+      "main": [
+        [
+          {
+            "index": 0,
+            "node": "Enviar a Telegram",
+            "type": "main"
+          }
+        ]
+      ]
+    }
+  },
+  "id": "taJY42QX0FhEhUse",
+  "name": "WF2 - Filtro y avisos por Telegram",
+  "nodes": [
+    {
+      "id": "trigger-cron",
+      "name": "Cada hora",
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 1,
+              "triggerAtMinute": 20
+            }
+          ]
+        }
+      },
+      "position": [
+        0,
+        200
+      ],
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2
+    },
+    {
+      "id": "trigger-manual",
+      "name": "Ejecutar a mano",
+      "parameters": {},
+      "position": [
+        0,
+        400
+      ],
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1
+    },
+    {
+      "credentials": {
+        "postgres": {
+          "id": "jhPgJobs00000001",
+          "name": "Postgres jobs"
+        }
+      },
+      "id": "pg-classify",
+      "name": "Clasificar por reglas",
+      "parameters": {
+        "operation": "executeQuery",
+        "options": {},
+        "query": "-- WF2: clasifica por reglas las ofertas con status 'new' → 'candidate' | 'filtered_out'.\n-- Determinista y sin IA. Para reclasificar todo: UPDATE offers SET status='new' WHERE status IN ('candidate','filtered_out') AND notified_at IS NULL;\n-- Perfil: n8n/automatización, JS/Node, Java · Colombia (COT) · inglés básico · Junior–Senior.\nWITH base AS (\n  SELECT o.id, o.title, o.source, o.location, o.published_at, o.tags,\n         lower(o.title || ' ' || array_to_string(o.tags, ' ') || ' ' || coalesce(o.description, '')) AS txt,\n         coalesce(o.raw->>'lang', '') AS src_lang,\n         ' ' || lower(coalesce(o.description, o.title)) || ' ' AS d\n  FROM offers o\n  WHERE o.status = 'new'\n),\nf AS (\n  SELECT b.*,\n    b.txt ~ '\\mn8n\\M'                                                                                    AS m_n8n,\n    -- Automatización: en el título, o herramientas concretas en cualquier parte (no la palabra suelta en la descripción)\n    b.title ~* '(automat|integraci|integration|zapier|workflow|\\mrpa\\M|no[- ]?code|low[- ]?code)'\n      OR b.txt ~ '\\m(zapier|make\\.com|integromat|power automate)'                                       AS m_auto,\n    b.tags && '{javascript,typescript,node,nodejs,node.js,react,next.js,nextjs,vue,vue.js}'::text[]\n      OR b.title ~* '\\m(node|javascript|typescript|full[ -]?stack|react)'                                AS m_js,\n    b.tags && '{java,spring,spring boot,springboot}'::text[] OR b.title ~* '\\m(java|spring)\\M'           AS m_java,\n    b.title ~* '\\m(ai agents?|agentic|llm|ai automation|chatbots?)\\M'                                     AS m_ia,\n    -- Región: abierta / LATAM / Colombia explícita\n    b.location ~* '(worldwide|anywhere|latam|latin|south america|americas|colombia)'                     AS r_ok,\n    b.location IS NULL OR b.location ~* '^remote$' OR b.source = 'n8nforum'                              AS r_unknown,\n    b.title ~* '\\m(staff|principal|lead|head|director|vp|chief|cto|manager)\\M'                           AS too_senior,\n    -- Restricción de país escrita en el título aunque location diga \"Anywhere\"\n    b.title ~* '(\\mu\\.?s\\.?a?\\.?|united states|canada|\\muk\\M|europe|\\meu\\M)[ -]*(based|only)|remote[ -]+(-[ -]*)?(us|usa|canada|uk|europe)\\M'\n                                                                                                         AS r_title_excl,\n    -- Foro n8n: solo pedidos de contratación (fuera \"[For Hire]\"/\"[Available]\" y debates)\n    b.source = 'n8nforum' AND (\n      b.title ~* '(for hire|\\[available\\]|^available|open to work|my services|portfolio)'\n      OR b.title !~* '(hiring|looking for|seeking|need|wanted|paid|job|freelancer|developer|engineer|expert|specialist|builder|consultant|contract|intern|necesito|busco|buscamos|contrat|se paga|pago|proyecto|desarrollador)'\n    )                                                                                                    AS not_a_job,\n    -- Roles que no son de desarrollo (ventas, socios comerciales)\n    b.title ~* '\\m(sales|business development|referral|commission|account executive|sdr|partners?|ventas|comercial)\\M'\n                                                                                                         AS not_dev,\n    b.published_at < now() - interval '30 days'                                                          AS too_old,\n    -- Idioma: GetOnBrd lo declara a veces; si no, contar palabras frecuentes es/en\n    CASE WHEN b.src_lang = 'es' THEN 'es' WHEN b.src_lang = 'en' THEN 'en'\n         WHEN regexp_count(b.d, ' (de|la|que|para|los|con|una|experiencia) ')\n            > regexp_count(b.d, ' (the|and|to|of|with|for|you|we) ') THEN 'es'\n         ELSE 'en' END                                                                                   AS lang,\n    b.title ~* 'ingl[eé]s|english|biling'                                                                AS asks_english\n  FROM base b\n),\ns AS (\n  SELECT f.*,\n    (m_n8n OR m_auto OR m_js OR m_java)                     AS stack_ok,\n    (r_ok OR r_unknown) AND NOT r_title_excl               AS region_ok,\n      (CASE WHEN m_n8n  THEN 50 ELSE 0 END) + (CASE WHEN m_auto THEN 25 ELSE 0 END)\n    + (CASE WHEN m_js   THEN 20 ELSE 0 END) + (CASE WHEN m_java THEN 20 ELSE 0 END)\n    + (CASE WHEN m_ia   THEN 10 ELSE 0 END) + (CASE WHEN lang = 'es' AND NOT asks_english THEN 20 ELSE 0 END)\n    + (CASE WHEN r_ok   THEN 10 ELSE 0 END)                AS pts,\n    array_remove(ARRAY[\n      CASE WHEN m_n8n  THEN 'n8n' END, CASE WHEN m_auto THEN 'automatización' END,\n      CASE WHEN m_js   THEN 'js/node' END, CASE WHEN m_java THEN 'java' END, CASE WHEN m_ia THEN 'ia/agentes' END,\n      CASE WHEN lang = 'es' THEN 'español' ELSE 'inglés' END,\n      CASE WHEN asks_english THEN 'pide inglés' END,\n      CASE WHEN r_title_excl OR NOT (r_ok OR r_unknown) THEN 'región excluye Colombia'\n           WHEN r_ok THEN 'región ok' ELSE 'región sin especificar' END,\n      CASE WHEN not_a_job THEN 'no es oferta' END,\n      CASE WHEN not_dev THEN 'no es de desarrollo' END,\n      CASE WHEN NOT (m_n8n OR m_auto OR m_js OR m_java) THEN 'stack no coincide' END,\n      CASE WHEN too_senior THEN 'demasiado senior' END,\n      CASE WHEN too_old THEN 'antigua (>30 días)' END\n    ], NULL)                                                AS why\n  FROM f\n),\nupd AS (\n  UPDATE offers o SET\n    status = CASE WHEN s.stack_ok AND s.region_ok AND NOT s.too_senior AND NOT s.too_old AND NOT s.not_a_job AND NOT s.not_dev\n                  THEN 'candidate' ELSE 'filtered_out' END,\n    score = s.pts, reasons = s.why, lang = s.lang, classified_at = now()\n  FROM s WHERE o.id = s.id\n  RETURNING o.status\n)\nSELECT count(*) FILTER (WHERE status = 'candidate') AS candidatas,\n       count(*) FILTER (WHERE status = 'filtered_out') AS descartadas\nFROM upd;\n"
+      },
+      "position": [
+        240,
+        300
+      ],
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6
+    },
+    {
+      "credentials": {
+        "postgres": {
+          "id": "jhPgJobs00000001",
+          "name": "Postgres jobs"
+        }
+      },
+      "executeOnce": true,
+      "id": "pg-pending",
+      "name": "Candidatas sin avisar",
+      "parameters": {
+        "operation": "executeQuery",
+        "options": {},
+        "query": "SELECT id, title, company, location, salary_min, salary_max, url, source, score, reasons, lang, job_type,\n       published_at\nFROM offers WHERE status = 'candidate' AND notified_at IS NULL\nORDER BY score DESC, published_at DESC NULLS LAST LIMIT 300;"
+      },
+      "position": [
+        480,
+        300
+      ],
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6
+    },
+    {
+      "id": "code-format",
+      "name": "Formatear avisos",
+      "parameters": {
+        "jsCode": "// GENERADO por scripts/build_wf2.js — no editar aquí.\nconst MAX_INDIVIDUAL = 8, DIGEST_TOP = 12;\nconst esc = (s) => String(s ?? '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/\"/g, '&quot;');\nconst safeUrl = (u) => /^https?:\\/\\//i.test(String(u || '')) ? esc(u) : '';\nconst money = (o) => o.salary_min ? `💰 $${Math.round(o.salary_min / 1000)}k${o.salary_max && o.salary_max !== o.salary_min ? '–' + Math.round(o.salary_max / 1000) + 'k' : ''} USD/año` : '';\nconst flag = (o) => (o.reasons || []).includes('pide inglés') || o.lang === 'en' ? '🇬🇧' : '🇪🇸';\nconst link = (o, label) => safeUrl(o.url) ? `<a href=\"${safeUrl(o.url)}\">${esc(label)}</a>` : esc(label);\n\nconst offers = $input.all().map((i) => i.json).filter((o) => o && o.id);\nif (offers.length === 0) return [];\n\nif (offers.length <= MAX_INDIVIDUAL) {\n  return offers.map((o) => ({ json: { ids: [o.id], text: [\n    `⭐ <b>${o.score}</b> ${flag(o)} ${link(o, o.title)}`,\n    [o.company && `🏢 ${esc(o.company)}`, o.location && `📍 ${esc(o.location)}`].filter(Boolean).join(' · '),\n    [money(o), o.job_type && `⏱ ${esc(o.job_type)}`].filter(Boolean).join(' · '),\n    `🏷 ${esc((o.reasons || []).join(', '))}`,\n    `<i>${esc(o.source)}</i>`,\n  ].filter(Boolean).join('\\n') } }));\n}\n\nconst top = offers.slice(0, DIGEST_TOP).map((o, n) =>\n  `${n + 1}. ⭐${o.score} ${flag(o)} ${link(o, o.title)}${o.company ? ' — ' + esc(o.company) : ''}${money(o) ? ' · ' + money(o) : ''}`);\nconst rest = offers.length - DIGEST_TOP;\nreturn [{ json: { ids: offers.map((o) => o.id), text: [\n  `📋 <b>${offers.length} ofertas nuevas</b> que encajan contigo. Las mejores:`, '', ...top,\n  rest > 0 ? `\\n…y ${rest} más (status = 'candidate' en la base jobs).` : '',\n].join('\\n') } }];\n",
+        "mode": "runOnceForAllItems"
+      },
+      "position": [
+        720,
+        300
+      ],
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2
+    },
+    {
+      "credentials": {
+        "telegramApi": {
+          "id": "0oBvnvYgYSOOhmhG",
+          "name": "Telegram Empliosbot"
+        }
+      },
+      "id": "tg-send",
+      "name": "Enviar a Telegram",
+      "parameters": {
+        "additionalFields": {
+          "appendAttribution": false,
+          "disable_web_page_preview": true,
+          "parse_mode": "HTML"
+        },
+        "chatId": "YOUR_TELEGRAM_CHAT_ID",
+        "text": "={{ $json.text }}"
+      },
+      "position": [
+        960,
+        300
+      ],
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2
+    },
+    {
+      "credentials": {
+        "postgres": {
+          "id": "jhPgJobs00000001",
+          "name": "Postgres jobs"
+        }
+      },
+      "executeOnce": true,
+      "id": "pg-mark",
+      "name": "Marcar avisadas",
+      "parameters": {
+        "operation": "executeQuery",
+        "options": {
+          "queryReplacement": "={{ [ JSON.stringify($('Formatear avisos').all().flatMap((i) => i.json.ids)) ] }}"
+        },
+        "query": "UPDATE offers SET notified_at = now()\nWHERE id IN (SELECT jsonb_array_elements_text($1::jsonb)::bigint)\nRETURNING id;"
+      },
+      "position": [
+        1200,
+        300
+      ],
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/Bogota"
+  }
+}
