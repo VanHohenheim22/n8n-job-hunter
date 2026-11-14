@@ -51,8 +51,12 @@ case "$cmd" in
     done ;;
   push)
     f="$1"; id="$(jq -r '.id // empty' "$f")"; body="$(jq -c "$clean_wf" "$f")"
-    if [ -n "$id" ] && api GET "/workflows/$id" >/dev/null 2>&1; then
+    if [ -n "$id" ] && cur="$(api GET "/workflows/$id" 2>/dev/null)"; then
       api PUT "/workflows/$id" "$body" | jq -r '"↑ actualizado \(.id) \(.name)"'
+      # n8n 2.x no recarga los triggers/webhooks de un workflow activo tras un PUT: reactivarlo.
+      if [ "$(jq -r '.active' <<<"$cur")" = "true" ]; then
+        api POST "/workflows/$id/deactivate" >/dev/null && api POST "/workflows/$id/activate" | jq -r '"↻ reactivado \(.id)"'
+      fi
     else
       api POST /workflows "$body" | jq -r '"↑ creado \(.id) \(.name)  (nuevo id: actualiza el archivo con scripts/n8n.sh pull \(.id))"'
     fi ;;

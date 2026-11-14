@@ -57,6 +57,24 @@ services:
     ports:
       - "127.0.0.1:${N8N_PORT:-5678}:5678"
 
+  # Lee Telegram (long polling) y reenvía a n8n por la red interna: n8n no se expone a internet.
+  tg-poller:
+    image: node:22-alpine
+    restart: unless-stopped
+    depends_on: [n8n]
+    user: node
+    read_only: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    command: ["node", "/app/poller.js"]
+    volumes:
+      - ./tg-poller:/app:ro
+    environment:
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
+      TELEGRAM_CHAT_ID: ${TELEGRAM_CHAT_ID}
+      WEBHOOK_SECRET: ${WEBHOOK_SECRET}
+      FORWARD_URL: http://n8n:5678/webhook/tg-actions
+
 volumes:
   pg_data:
   n8n_data:
